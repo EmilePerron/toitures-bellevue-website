@@ -22,6 +22,10 @@
 					<a href="tel:15819096111">1 581 909-6111</a>
 				</div>
 			</div>
+
+			<div class="license">
+				Licence RBQ: 5791-2487-01
+			</div>
 		</div>
 		
 		<form action="fasdf">
