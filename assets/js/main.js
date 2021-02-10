@@ -1,1 +1,4 @@
-window.addEventListener('scroll', () => document.body.classList.toggle('scrolled', window.scrollY >= 30));
+(function() {
+	var helpBar = document.querySelector("#help-bar");
+	window.addEventListener('scroll', () => document.body.classList.toggle('stick-nav', window.scrollY >= helpBar.offsetHeight));
+})();
