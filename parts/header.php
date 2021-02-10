@@ -1,3 +1,6 @@
+<?php 
+$currentRoute = str_replace('.php', '', ltrim($_SERVER['PHP_SELF'] ?? '', '/'));
+?>
 <nav id="help-bar">
 	<div class="container">
 		<a href="tel:15819096111" class="phone">
@@ -10,46 +13,46 @@
 <header id="header">
 	<div class="container">
 		<div class="branding">
-			<a href="index.html">
+			<a href="/">
 				<img src="/assets/media/logo_toiture-bellevue.png" alt="Toitures Bellevue">
 			</a>
 		</div>
 		<nav>
 			<ul>
 				<li>
-					<a href="#">À propos</a>
+					<a href="/a-propos" class="<?= $currentRoute == 'a-propos' ? 'current' : '' ?>">À propos</a>
 				</li>
 				<li class="dropdown">
 					<div class="dropdown-toggle">Services</div>
 					<ul class="dropdown-list">
 						<li>
-							<a href="#">Réfection de toiture</a>
+							<a href="#" class="<?= $currentRoute == 'service/refection-de-toiture' ? 'current' : '' ?>">Réfection de toiture</a>
 						</li>
 						<li>
-							<a href="#">Réparation de toiture</a>
+							<a href="#" class="<?= $currentRoute == 'service/reparation-de-toiture' ? 'current' : '' ?>">Réparation de toiture</a>
 						</li>
 						<li>
-							<a href="#">Inspection de toiture</a>
+							<a href="#" class="<?= $currentRoute == 'service/inspection-de-toiture' ? 'current' : '' ?>">Inspection de toiture</a>
 						</li>
 						<li>
-							<a href="#">Ventilation et isolation d'entre-toit</a>
+							<a href="#" class="<?= $currentRoute == 'service/ventilation-et-isolation-entre-toit' ? 'current' : '' ?>">Ventilation et isolation d'entre-toit</a>
 						</li>
 						<li>
-							<a href="#">Déneigement de toiture</a>
+							<a href="#" class="<?= $currentRoute == 'service/deneigement-de-toiture' ? 'current' : '' ?>">Déneigement de toiture</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="#">Réalisations</a>
+					<a href="#" class="<?= $currentRoute == 'realisations' ? 'current' : '' ?>">Réalisations</a>
 				</li>
 				<li>
-					<a href="#">Blogue</a>
+					<a href="#" class="<?= strpos($currentRoute, 'blogue') !== false ? 'current' : '' ?>">Blogue</a>
 				</li>
 				<li>
-					<a href="#">Carrière</a>
+					<a href="#" class="<?= $currentRoute == 'carriere' ? 'current' : '' ?>">Carrière</a>
 				</li>
 				<li>
-					<a href="#">Nous joindre</a>
+					<a href="#" class="<?= $currentRoute == 'nous-joindre' ? 'current' : '' ?>">Nous joindre</a>
 				</li>
 			</ul>
 		</nav>

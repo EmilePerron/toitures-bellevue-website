@@ -14,7 +14,7 @@
 				</div>
 			</div>
 			
-			<section class="tertiary">
+			<section>
 				<div class="container">
 					<h2>Qualité et sécurité sont nos mots d’ordre!</h2>
 					<p>Chez Toitures Bellevue, <strong>on ne coupe pas les coins ronds</strong>. La satisfaction de nos clients et le travail bien fait sont nos principaux soucis. Nous savons que les projets de toitures sont souvent les plus gros que l’on puisse apporter à une maison. Avec plus de 500 toitures à notre actif, vous pourrez être en toute confiance avec notre équipe de travailleurs qualifiés.</p>
@@ -28,7 +28,7 @@
 			</section>
 
 			<section class="primary diagonal-top" id="garantie">
-				<div class="container">
+				<div class="container small text-center">
 					<h2>Notre garantie</h2>
 					<ul>
 						<li>

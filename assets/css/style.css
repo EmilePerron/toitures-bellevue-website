@@ -92,6 +92,7 @@ header nav > ul > li .dropdown-toggle { display: block; padding: 15px; font-weig
 header nav > ul > li:not(:first-child) { margin-left: 10px; }
 header nav > ul > li > a:hover, 
 header nav > ul > .dropdown:hover .dropdown-toggle { color: var(--color-primary); }
+header nav > ul > li > a.current { color: var(--color-primary-dark); border-bottom: 2px solid var(--color-primary-light); }
 header nav .dropdown { position: relative; }
 header nav .dropdown .dropdown-list { display: block; width: 200px; max-height: 0; padding: 0; list-style: none; border-radius: 2px; border-bottom-left-radius: 15px; position: absolute; top: 100%; left: 0; overflow: hidden; transition: max-height .25s ease; }
 header nav .dropdown .dropdown-list::before { content: ' '; display: block; width: 100%; height: 10px; }
@@ -146,3 +147,23 @@ footer form textarea { font-size: .9rem; color: white; background-color: #232729
 #services a i { margin: .25em auto; font-size: 2em; }
 #services a:hover { background-color: rgba(230, 72, 130, 0.459); backdrop-filter: blur(4px); border-color: var(--color-primary-lighter); }
 /* <<< HOMEPAGE <<< */
+
+/* >>> CONTENT PAGES >>> */
+#page-header { display: flex; min-height: 150px; align-items: center; background-image: url('../media/stock-photo-roof-shingles.jpg'); background-size: cover; background-position: bottom center; background-blend-mode: soft-light; background-attachment: fixed; background-color: var(--color-primary); box-shadow: inset 0 0 15px rgba(0, 0, 0, .25); } 
+#page-header h1 { font-family: var(--font-heading); font-size: 3rem;  line-height: 1.35; color: white; }
+/* <<< CONTENT PAGES <<< */
+
+
+/* >>> ABOUT PAGE >>> */
+#garantie ul { display: grid; grid-template-columns: repeat(2, 1fr); gap: 45px; padding: 0; margin: 45px auto; list-style: none; }
+#garantie ul li { padding: 60px 30px; text-align: center; color: var(--color-primary-dark); background-color: #fff; border-radius: 1px; }
+#garantie ul li .type { font-size: 1.1rem; }
+#garantie ul li .length { font-size: 2rem; font-weight: 600; text-transform: uppercase; }
+#garantie ul li:nth-child(2n) { background-color: var(--color-primary-light); color: white; }
+
+#partenaires ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: 45px; padding: 0; margin-bottom: 60px; list-style: none; }
+#partenaires a { display: block; width: 100%; height: 100%; background-color: white; transition: opacity .25s ease; }
+#partenaires img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+#partenaires a:hover { opacity: .75; }
+/* <<< ABOUT PAGE <<< */
+
