@@ -11,7 +11,6 @@ RewriteRule ^(.*)$ $1.php
 
 # Prevent access to sensitive directories
 RedirectMatch 404 /\.git
-RedirectMatch 404 /\parts
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php80” package as the default “PHP” programming language.
