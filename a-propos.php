@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Toitures Bellevue</title>
+		<title>À propos - Toitures Bellevue</title>
 		<?php include 'parts/head.php' ?>
 	</head>
 	<body>

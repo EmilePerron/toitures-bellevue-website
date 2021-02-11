@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Toitures Bellevue</title>
+		<title>Toitures Bellevue - Votre spécialiste en toiture à Québec</title>
 		<?php include 'parts/head.php' ?>
 	</head>
 	<body>

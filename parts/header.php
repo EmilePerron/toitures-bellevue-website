@@ -7,7 +7,7 @@ $currentRoute = str_replace('.php', '', ltrim($_SERVER['PHP_SELF'] ?? '', '/'));
 			<i class="fas fa-phone-alt"></i>&nbsp;
 			1 581 909-6111
 		</a>
-		<a href="/estimation-gratuite" class="cta">Obtenir une estimation gratuite</a>
+		<a href="/estimateur-en-ligne" class="cta">Obtenir une estimation gratuite</a>
 	</div>
 </nav>
 <header id="header">
@@ -26,19 +26,19 @@ $currentRoute = str_replace('.php', '', ltrim($_SERVER['PHP_SELF'] ?? '', '/'));
 					<div class="dropdown-toggle">Services</div>
 					<ul class="dropdown-list">
 						<li>
-							<a href="#" class="<?= $currentRoute == 'service/refection-de-toiture' ? 'current' : '' ?>">Réfection de toiture</a>
+							<a href="/services/refection-de-toiture" class="<?= $currentRoute == 'services/refection-de-toiture' ? 'current' : '' ?>">Réfection de toiture</a>
 						</li>
 						<li>
-							<a href="#" class="<?= $currentRoute == 'service/reparation-de-toiture' ? 'current' : '' ?>">Réparation de toiture</a>
+							<a href="/services/reparation-de-toiture" class="<?= $currentRoute == 'services/reparation-de-toiture' ? 'current' : '' ?>">Réparation de toiture</a>
 						</li>
 						<li>
-							<a href="#" class="<?= $currentRoute == 'service/inspection-de-toiture' ? 'current' : '' ?>">Inspection de toiture</a>
+							<a href="/services/inspection-de-toiture" class="<?= $currentRoute == 'services/inspection-de-toiture' ? 'current' : '' ?>">Inspection de toiture</a>
 						</li>
 						<li>
-							<a href="#" class="<?= $currentRoute == 'service/ventilation-et-isolation-entre-toit' ? 'current' : '' ?>">Ventilation et isolation d'entre-toit</a>
+							<a href="/services/ventilation-et-isolation-entre-toit" class="<?= $currentRoute == 'services/ventilation-et-isolation-entre-toit' ? 'current' : '' ?>">Ventilation et isolation d'entre-toit</a>
 						</li>
 						<li>
-							<a href="#" class="<?= $currentRoute == 'service/deneigement-de-toiture' ? 'current' : '' ?>">Déneigement de toiture</a>
+							<a href="/services/deneigement-de-toiture" class="<?= $currentRoute == 'services/deneigement-de-toiture' ? 'current' : '' ?>">Déneigement de toiture</a>
 						</li>
 					</ul>
 				</li>

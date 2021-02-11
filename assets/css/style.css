@@ -145,12 +145,14 @@ footer form textarea { font-size: .9rem; color: white; background-color: #232729
 #services ul { display: grid; padding: 0; margin-top: 60px; grid-template-columns: repeat(3, 1fr); gap: 30px; list-style: none; }
 #services a { display: flex; width: 100%; min-height: 75px; padding: 15px; flex-direction: column; justify-content: center; align-items: center; font-size: 1em; font-weight: 600; text-align: center; text-decoration: none; color: white; background-color: rgba(0, 0, 0, .25); border: 2px solid transparent; border-radius: 2px; transition: background-color .15s ease, border .15s ease, backdrop-filter .15s ease; }
 #services a i { margin: .25em auto; font-size: 2em; }
-#services a:hover { background-color: rgba(230, 72, 130, 0.459); backdrop-filter: blur(4px); border-color: var(--color-primary-lighter); }
+#services a:hover { background-color: rgba(230, 72, 130, 0.6); border-color: var(--color-primary-lighter); }
 /* <<< HOMEPAGE <<< */
 
 /* >>> CONTENT PAGES >>> */
 #page-header { display: flex; min-height: 150px; align-items: center; background-image: url('../media/stock-photo-roof-shingles.jpg'); background-size: cover; background-position: bottom center; background-blend-mode: soft-light; background-attachment: fixed; background-color: var(--color-primary); box-shadow: inset 0 0 15px rgba(0, 0, 0, .25); } 
 #page-header h1 { font-family: var(--font-heading); font-size: 3rem;  line-height: 1.35; color: white; }
+
+#calculator-cta .container { margin-bottom: 20px; }
 /* <<< CONTENT PAGES <<< */
 
 
@@ -167,3 +169,8 @@ footer form textarea { font-size: .9rem; color: white; background-color: #232729
 #partenaires a:hover { opacity: .75; }
 /* <<< ABOUT PAGE <<< */
 
+@media (min-width: 768px) {
+	#contact-cta { position: relative; }
+	#contact-cta::before { content: ' '; position: absolute;  top: 0; right: 0;  width: 45%; height: 100%; background-image: url('https://image.shutterstock.com/z/stock-photo-smiling-young-unshaven-business-man-in-light-shirt-protective-construction-helmet-isolated-on-grey-1687397161.jpg'); background-size: cover; background-position: center top; }
+	#contact-cta .container { padding-right: 45%; }
+}
