@@ -54,12 +54,18 @@ section h4 { color: var(--section-heading-color); }
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 
+p:first-child { margin-top: 0; }
+p a { text-decoration: none; color: var(--button-background-color); transition: all .15s ease; }
+p a:hover { color: var(--color-primary-black); }
+
 button, 
 .button { display: inline-flex; padding: .75em 1.75em; margin-top: 1em; margin-right: 1em; align-items: center; font-size: 1rem; font-weight: 600; text-decoration: none; color: var(--button-text-color); background-color: var(--button-background-color); border: none; border-radius: 1px; border-bottom-left-radius: .75em; cursor: pointer; transition: background-color .25s ease; }
 button:hover, 
 .button:hover { background-color: var(--button-background-color-hover); }
 .button-secondary { --button-text-color: var(--color-secondary-dark); --button-background-color: var(--color-secondary-light); --button-background-color-hover: var(--color-secondary-lighter); }
 .button-tertiary { --button-text-color: var(--color-tertiary-darker); --button-background-color: var(--color-tertiary-light); --button-background-color-hover: var(--color-tertiary); }
+button i, 
+.button i { margin-left: 1em; }
 .text-right > button,
 .text-right > .button { margin-right: 0; }
 
