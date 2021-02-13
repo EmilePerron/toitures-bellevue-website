@@ -42,9 +42,9 @@ $currentRoute = str_replace('.php', '', ltrim($_SERVER['PHP_SELF'] ?? '', '/'));
 						</li>
 					</ul>
 				</li>
-				<li>
+				<!--li>
 					<a href="#" class="<?= $currentRoute == 'realisations' ? 'current' : '' ?>">Réalisations</a>
-				</li>
+				</li-->
 				<li>
 					<a href="#" class="<?= strpos($currentRoute, 'blogue') !== false ? 'current' : '' ?>">Blogue</a>
 				</li>
