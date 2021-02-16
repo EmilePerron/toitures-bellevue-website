@@ -85,9 +85,10 @@ fieldset.required label:first-child::after { content: ' *'; color: var(--color-p
 
 .custom-file-input { display: block; width: 100%; height: 41px; padding: 8px 12px; padding-left: 35px; margin: 2px 0; font-size: 1rem; font-weight: 400; line-height: 1.35; background-color: var(--color-white); border: 2px solid transparent; border-radius: 2px; outline: none; overflow: hidden; cursor: pointer; position: relative; transition: border-color .25s ease; }
 .custom-file-input i { font-size: 1.25rem; font-weight: 400; line-height: 1; color: var(--color-tertiary-black); position: absolute; top: .5em; left: .5em; } 
-.custom-file-input input { position: absolute; top: -1000px; left: 0; opacity: 0; pointer-events: none; }
+.custom-file-input input { position: absolute; top: 0; left: -1000px; opacity: 0; pointer-events: none; }
 .custom-file-input input + *:empty + .select-label::before { content: 'Sélectionner un fichier'; color: #7c8e96; transition: color .25s ease; }
 .custom-file-input:hover input + * + .select-label::before { color: var(--color-black); }
+.custom-file-input:focus-within { border-color: var(--color-tertiary-dark); }
 
 #help-bar { width: 100%; height: 57px; padding: 10px; background-color: var(--color-tertiary); position: absolute; top: 0; left: 0; }
 #help-bar .container { display: flex; justify-content: flex-end; align-items: center; }
