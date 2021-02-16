@@ -31,12 +31,12 @@
 		<form action="fasdf">
 			<div class="title">Contactez-nous</div>
 			
-			<fieldset>
+			<fieldset class="required">
 				<label for="input-name">Nom</label>
 				<input type="text" name="name" id="input-name" required>
 			</fieldset>
 			
-			<fieldset>
+			<fieldset class="required">
 				<label for="input-phone">Numéro de téléphone</label>
 				<input type="text" name="phone" id="input-phone">
 			</fieldset>

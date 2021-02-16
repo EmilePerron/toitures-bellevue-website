@@ -43,16 +43,16 @@ $currentRoute = str_replace('.php', '', ltrim($_SERVER['PHP_SELF'] ?? '', '/'));
 					</ul>
 				</li>
 				<!--li>
-					<a href="#" class="<?= $currentRoute == 'realisations' ? 'current' : '' ?>">Réalisations</a>
+					<a href="/realisations" class="<?= $currentRoute == 'realisations' ? 'current' : '' ?>">Réalisations</a>
 				</li-->
 				<li>
-					<a href="#" class="<?= strpos($currentRoute, 'blogue') !== false ? 'current' : '' ?>">Blogue</a>
+					<a href="/blogue" class="<?= strpos($currentRoute, 'blogue') !== false ? 'current' : '' ?>">Blogue</a>
 				</li>
 				<li>
-					<a href="#" class="<?= $currentRoute == 'carriere' ? 'current' : '' ?>">Carrière</a>
+					<a href="/carriere" class="<?= $currentRoute == 'carriere' ? 'current' : '' ?>">Carrière</a>
 				</li>
 				<li>
-					<a href="#" class="<?= $currentRoute == 'nous-joindre' ? 'current' : '' ?>">Nous joindre</a>
+					<a href="/nous-joindre" class="<?= $currentRoute == 'nous-joindre' ? 'current' : '' ?>">Nous joindre</a>
 				</li>
 			</ul>
 		</nav>
