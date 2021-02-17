@@ -53,6 +53,7 @@ section h4 { color: var(--section-heading-color); }
 .text-left { text-align: left; }
 .text-center { text-align: center; }
 .text-right { text-align: right; }
+.text-small { font-size: .85rem; }
 
 p:first-child { margin-top: 0; }
 p a { text-decoration: none; color: var(--button-background-color); transition: all .15s ease; }
@@ -185,6 +186,21 @@ footer form textarea { font-size: .9rem; color: white; background-color: #232729
 #partenaires img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 #partenaires a:hover { opacity: .75; }
 /* <<< ABOUT PAGE <<< */
+
+
+/* >>> CONTACT PAGE >>> */
+.contact-fields > * { display: grid; grid-template-columns: 40px auto; gap: 15px; margin-bottom: 20px; font-size: 1.25rem; }
+.contact-fields i { font-size: 1.5rem; line-height: 1.25; text-align: center; color: var(--color-primary); }
+.contact-fields a { text-decoration: none; color: var(--color-primary); }
+.contact-fields a:hover { text-decoration: underline; }
+/* <<< CONTACT PAGE <<< */
+
+@media (min-width: 1280px) {
+	.split-sections { display: grid; grid-template-columns: 1fr 1fr; --split-padding: calc(50vw - 570px); }
+	.split-sections section:first-child { padding-left: var(--split-padding); padding-right: 90px; }
+	.split-sections section:last-child { padding-right: var(--split-padding); padding-left: 90px; }
+	.split-sections .container { width: 100%; max-width: 100%; }
+}
 
 @media (min-width: 768px) {
 	form .two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
