@@ -1,6 +1,7 @@
 (function() {
 	var helpBar = document.querySelector("#help-bar");
 	window.addEventListener('scroll', () => document.body.classList.toggle('stick-nav', window.scrollY >= helpBar.offsetHeight));
+	window.dispatchEvent(new Event('scroll'));
 
 	// Custom file inputs
 	for (const fileInput of document.querySelectorAll('input[type="file"]')) {
