@@ -35,7 +35,7 @@
 					<div class="advantage">
 						<i class="fad fa-award"></i>
 						<div class="title">Qualité</div>
-						<div class="description">garantie 25 ans</div>
+						<div class="description">garantie à vie<sup><a href="/a-propos#garantie">*</a></sup></div>
 					</div>
 				</div>
 			</div>
@@ -53,33 +53,39 @@
 					<h2>Nos services</h2>
 					<ul>
 						<li>
-							<a href="afasdf">
+							<a href="/services/refection-de-toiture">
 								<i class="fad fa-home"></i>
 								Réfection de toiture
 							</a>
 						</li>
 						<li>
-							<a href="afasdf">
+							<a href="/services/reparation-de-toiture">
 								<i class="fad fa-toolbox"></i>
 								Réparation de toiture
 							</a>
 						</li>
 						<li>
-							<a href="afasdf">
+							<a href="/services/inspection-de-toiture">
 								<i class="fad fa-user-hard-hat"></i>
 								Inspection de toiture
 							</a>
 						</li>
 						<li>
-							<a href="afasdf">
+							<a href="/services/ventilation-et-isolation-entre-toit">
 								<i class="fad fa-fan"></i>
 								Ventilation et isolation d’entre-toit
 							</a>
 						</li>
 						<li>
-							<a href="afasdf">
+							<a href="/services/deneigement-de-toiture">
 								<i class="fad fa-snowflakes"></i>
 								Déneigement de toiture
+							</a>
+						</li>
+						<li>
+							<a href="/estimateur-en-ligne" class="cta">
+								<i class="fad fa-messages-dollar"></i>
+								Obtenez votre estimation gratuite!
 							</a>
 						</li>
 					</ul>

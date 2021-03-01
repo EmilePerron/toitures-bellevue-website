@@ -37,9 +37,15 @@
 						</li>
 						<li>
 							<div class="type">Matériaux</div>
-							<div class="length">25 ans</div>
+							<div class="length">à vie<sup>*</sup></div>
 						</li>
 					</ul>
+
+					<p class="disclaimer text-small">
+						* Plusieurs produits, tels que les bardeaux Certainteed Landmark et Landmark Pro, sont garantis à vie.
+						Tous nos autres bardeaux sont garantis pour un minimum de 25 ans.
+						Pour obtenir plus d'informations sur nos garanties, n'hésitez pas à <a href="/nous-joindre">nous contacter</a>!
+					</p>
 				</div>
 			</section>
 
