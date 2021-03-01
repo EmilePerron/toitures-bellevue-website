@@ -58,6 +58,8 @@ section h4 { color: var(--section-heading-color); }
 p:first-child { margin-top: 0; }
 p a { text-decoration: none; color: var(--button-background-color); transition: all .15s ease; }
 p a:hover { color: var(--color-primary-black); }
+section.primary p a { color: var(--color-white); }
+section.primary p a:hover { color: var(--color-primary-lighter); }
 
 ol li { margin-bottom: 20px; font-size: 1.25rem; font-weight: 500; color: var(--color-primary-light); width: 600px; max-width: 100%; }
 ol li::marker { font-family: var(--font-heading); font-size: 3rem; line-height: 1; color: var(--color-primary-light); }
@@ -82,7 +84,10 @@ textarea:focus,
 select:focus { border-color: var(--color-tertiary-dark); }
 fieldset { display: flex; padding: 0; margin: 0; margin-bottom: 1.25em; flex-direction: column; border: none; }
 fieldset > label { margin-bottom: 3px; font-weight: 600; }
-fieldset.required label:first-child::after { content: ' *'; color: var(--color-primary-light); }
+fieldset > label a { text-decoration: none; color: var(--color-tertiary-darker); transition: color .25s ease; }
+fieldset > label a:hover { color: var(--color-primary-dark); }
+fieldset.required > label:first-child::after { content: ' *'; color: var(--color-primary-light); }
+fieldset.optional > label:first-child::after { content: ' (optionnel)'; font-size: .8rem; font-weight: 400; opacity: .65; }
 ::placeholder { font-weight: 400; color: #bbb; }
 ::-moz-placeholder { font-weight: 400; color: #bbb; }
 
@@ -116,10 +121,10 @@ header nav > ul > li > a.current { color: var(--color-primary-dark); border-bott
 header nav .dropdown { position: relative; }
 header nav .dropdown .dropdown-list { display: block; width: 200px; max-height: 0; padding: 0; list-style: none; border-radius: 2px; border-bottom-left-radius: 15px; position: absolute; top: 100%; left: 0; overflow: hidden; transition: max-height .25s ease; }
 header nav .dropdown .dropdown-list::before { content: ' '; display: block; width: 100%; height: 10px; }
-header nav .dropdown .dropdown-list::after { content: '\f0d8'; font-family: 'Font Awesome 5 Pro'; font-size: 32px; font-weight: 600; line-height: 1; color: var(--color-tertiary); position: absolute; top: -8px; left: 22.5%; }
+header nav .dropdown .dropdown-list::after { content: '\f0d8'; font-family: 'Font Awesome 6 Pro'; font-size: 32px; font-weight: 600; line-height: 1; color: var(--color-tertiary); position: absolute; top: -8px; left: 22.5%; }
 header nav .dropdown .dropdown-list a { display: block; padding: 12px 14px; font-size: .9rem; text-decoration: none; color: var(--color-tertiary-black); background-color: var(--color-tertiary); position: relative; z-index: 10; transition: background-color .15s ease; }
 header nav .dropdown .dropdown-list a:hover { background-color: var(--color-tertiary-dark); }
-header nav .dropdown .dropdown-toggle::after { content: '\f107'; margin-left: .35em; font-family: 'Font Awesome 5 Pro'; font-size: 16px; position: relative; top: 1px; }
+header nav .dropdown .dropdown-toggle::after { content: '\f107'; margin-left: .35em; font-family: 'Font Awesome 6 Pro'; font-size: 16px; position: relative; top: 1px; }
 header nav .dropdown:hover .dropdown-list { max-height: 400px; box-shadow: 0 7px 8px rgba(0, 0, 0, .075); transition: max-height .5s ease, box-shadow .5s ease .1s; }
 body.stick-nav header { position: fixed; top: 0; box-shadow: 0 3px 15px rgba(0, 0, 0, .075); transition: box-shadow .35s ease; }
 body.stick-nav header .container { height: 90px; transition: height .35s ease-in-out; }
@@ -127,8 +132,8 @@ body.stick-nav header .branding img { width: 65%; transition: all .35s ease-in-o
 
 footer { padding: 90px 0; min-height: 250px; color: var(--color-white); background-color: var(--color-black); }
 footer .container { display: flex; justify-content: space-between; }
-footer a { color: var(--color-white); transition: color .15s ease; }
-footer a:hover { color: var(--color-primary-light); }
+footer a:not(.button) { color: var(--color-white); transition: color .15s ease; }
+footer a:not(.button):hover { color: var(--color-primary-light); }
 footer .contact .links { margin-top: 20px; }
 footer .contact .links > * { margin-top: 5px; }
 footer .contact .links i { margin-right: 5px; }
@@ -160,6 +165,9 @@ footer form textarea { font-size: .9rem; color: white; background-color: #232729
 #advantages .advantage i { font-size: 2.5em; line-height: 1; color: var(--color-primary); margin-bottom: .35em; }
 #advantages .advantage .title { font-size: 1.5em; font-weight: 600; line-height: 1.5; text-transform: uppercase; color: var(--color-primary); }
 #advantages .advantage .description { font-size: 1em; color: var(--color-primary-light); }
+#advantages .advantage .description sup { vertical-align: baseline; font-size: .85em; position: relative; top: -.15em; }
+#advantages .advantage .description sup a { text-decoration: none; color: inherit; }
+#advantages .advantage .description sup a:hover { color: #000 }
 
 #services { text-align: center; background-image: url('../media/stock-photo-roof-shingles.jpg'); background-size: cover; background-position: center top; background-blend-mode: soft-light; }
 #services ul { display: grid; padding: 0; margin-top: 60px; grid-template-columns: repeat(3, 1fr); gap: 30px; list-style: none; }
@@ -181,6 +189,7 @@ footer form textarea { font-size: .9rem; color: white; background-color: #232729
 #garantie ul li { padding: 60px 30px; text-align: center; color: var(--color-primary-dark); background-color: #fff; border-radius: 1px; }
 #garantie ul li .type { font-size: 1.1rem; }
 #garantie ul li .length { font-size: 2rem; font-weight: 600; text-transform: uppercase; }
+#garantie ul li .length sup { margin-right: -.25em; font-size: .75em; font-weight: 400; vertical-align: baseline; position: relative; top: -.35em; }
 #garantie ul li:nth-child(2n) { background-color: var(--color-primary-light); color: white; }
 
 #partenaires ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: 45px; padding: 0; margin-bottom: 60px; list-style: none; }
@@ -200,19 +209,22 @@ footer form textarea { font-size: .9rem; color: white; background-color: #232729
 
 /* >>> ESTIMATOR >>> */
 .field-swatches { display: flex; margin-top: 8px; }
-.field-swatches .swatch { display: flex; width: 250px; max-width: 100%; padding: 15px; margin-right: 30px; flex-direction: column; font-size: 1rem; font-weight: 600; text-align: center; background-color: white; border-radius: 3px; box-shadow: 0 0 0 rgb(0 0 0 / 10%); opacity: .75; cursor: pointer; transition: all .25s ease-out; }
+.field-swatches .swatch { display: flex; width: 250px; max-width: 100%; padding: 15px; margin-right: 30px; flex-direction: column; font-size: 1rem; font-weight: 600; text-align: center; background-color: white; border-radius: 3px; box-shadow: 0 0 0 rgb(0 0 0 / 10%); opacity: .6; cursor: pointer; transition: all .25s ease-out; }
 .field-swatches .swatch img { width: 100%; height: auto; margin-bottom: 15px; border: 3px solid transparent; border-radius: 2px; transition: border-color .25s ease-out; }
 .field-swatches .swatch .description { margin-top: .25em; font-size: .8rem; font-weight: 400; color: #737373; }
 .field-swatches .swatch input[type='radio'] { width: 20px; height: 20px; padding: 0; margin: 0 auto; margin-top: 10px; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 0px 1px #bbb; appearance: none; cursor: pointer; transition: all .15s ease; }
+.field-swatches .swatch input[type='checkbox'] { width: 20px; height: 20px; padding: 0; margin: 0 auto; margin-top: 10px; background: url('/assets/fontawesome/svgs/solid/check.svg'); background-size: 0; background-position: center; background-repeat: no-repeat; border: 2px solid #fff; border-radius: 2px; box-shadow: 0 0 0px 1px #bbb; appearance: none; cursor: pointer; transition: all .15s ease; }
 .field-swatches .swatch input[type='radio']:checked { background-color: var(--color-primary); box-shadow: 0 0 0px 1px var(--color-primary); }
+.field-swatches .swatch input[type='checkbox']:checked { background-size: 90%; box-shadow: 0 0 0px 1px var(--color-primary); }
 .field-swatches .swatch:hover { transform: scale(1.01); box-shadow: 0 0 15px rgba(0, 0, 0, .1); opacity: 1; }
-.field-swatches .swatch:hover input[type='radio'] { box-shadow: 0 0 0px 1px var(--color-primary); transition: all .25s ease-out; }
+.field-swatches .swatch:hover input[type='radio'],
+.field-swatches .swatch:hover input[type='checkbox'] { box-shadow: 0 0 0px 1px var(--color-primary); transition: all .25s ease-out; }
 .field-swatches .swatch.selected { transform: scale(1.01); box-shadow: 0 0 15px rgba(0, 0, 0, .1); opacity: 1; }
 .field-swatches .swatch.selected img { border-color: var(--color-primary-light); }
 input#area { display: inline-block; width: 100px; }
 select#area-unit { display: inline-block; width: 75px; }
 #estimate-form { position: relative; }
-#estimate-form::after { content: '\f110'; display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; font-family: 'Font Awesome 5 Pro'; font-size: 2rem; position: absolute; top: 0; left: 0; opacity: 0; animation: fa-spin 2s linear infinite; pointer-events: none; }
+#estimate-form::after { content: '\f110'; display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; font-family: 'Font Awesome 6 Pro'; font-size: 2rem; position: absolute; top: 0; left: 0; opacity: 0; animation: fa-spin 2s linear infinite; pointer-events: none; }
 #estimate-form.processing::after { opacity: 1; pointer-events: all; }
 #estimate-form.processing > * { opacity: .25; pointer-events: none; }
 /* <<< ESTIMATOR <<< */

@@ -26,6 +26,8 @@
 			<div class="license">
 				Licence RBQ: 5791-2487-01
 			</div>
+
+			<a href="/estimateur-en-ligne" class="button">Obtenir une estimation gratuite</a>
 		</div>
 		
 		<form action="fasdf">
