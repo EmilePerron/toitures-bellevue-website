@@ -28,6 +28,7 @@
 	--section-heading-color: var(--color-primary-black);
 	--section-body-color: var(--color-black);
 }
+html:focus-within { scroll-behavior: smooth; }
 html, body { padding: 0; margin: 0; font-family: var(--font-body); font-size: 16px; color: #000; box-sizing: border-box; -webkit-font-smoothing: antialiased; }
 * { font-family: inherit; font-size: inherit; box-sizing: inherit; -webkit-font-smoothing: inherit; }
 
@@ -46,6 +47,7 @@ section.diagonal-top { padding-top: 150px; margin-top: -45px; clip-path: polygon
 section h2,
 section h3,
 section h4 { color: var(--section-heading-color); }
+section.hidden { display: none; }
 
 .container { width: 1140px; max-width: 90%; margin: auto; }
 .container.small { width: 768px; }
@@ -216,6 +218,7 @@ footer form textarea { font-size: .9rem; color: white; background-color: #232729
 .field-swatches .swatch input[type='checkbox'] { width: 20px; height: 20px; padding: 0; margin: 0 auto; margin-top: 10px; background: url('/assets/fontawesome/svgs/solid/check.svg'); background-size: 0; background-position: center; background-repeat: no-repeat; border: 2px solid #fff; border-radius: 2px; box-shadow: 0 0 0px 1px #bbb; appearance: none; cursor: pointer; transition: all .15s ease; }
 .field-swatches .swatch input[type='radio']:checked { background-color: var(--color-primary); box-shadow: 0 0 0px 1px var(--color-primary); }
 .field-swatches .swatch input[type='checkbox']:checked { background-size: 90%; box-shadow: 0 0 0px 1px var(--color-primary); }
+.field-swatches .swatch:focus-within { outline: 3px solid var(--color-primary); }
 .field-swatches .swatch:hover { transform: scale(1.01); box-shadow: 0 0 15px rgba(0, 0, 0, .1); opacity: 1; }
 .field-swatches .swatch:hover input[type='radio'],
 .field-swatches .swatch:hover input[type='checkbox'] { box-shadow: 0 0 0px 1px var(--color-primary); transition: all .25s ease-out; }
@@ -227,6 +230,10 @@ select#area-unit { display: inline-block; width: 75px; }
 #estimate-form::after { content: '\f110'; display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; font-family: 'Font Awesome 6 Pro'; font-size: 2rem; position: absolute; top: 0; left: 0; opacity: 0; animation: fa-spin 2s linear infinite; pointer-events: none; }
 #estimate-form.processing::after { opacity: 1; pointer-events: all; }
 #estimate-form.processing > * { opacity: .25; pointer-events: none; }
+#estimate-form select[name="type"] { width: 350px; max-width: 100%; }
+#resultat .estimated-total { width: 350px; max-width: 100%; padding: 15px 22px; margin: 30px 0; font-size: 1.5em; color: var(--color-tertiary-black); background-color: var(--color-tertiary); border-radius: 2px; }
+#resultat .estimated-total [data-key="total"] { font-weight: 600; }
+#resultat .estimated-total i { font-size: 1rem; color: var(--color-tertiary-darker); }
 /* <<< ESTIMATOR <<< */
 
 
