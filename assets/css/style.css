@@ -218,12 +218,17 @@ footer form textarea { font-size: .9rem; color: white; background-color: #232729
 .field-swatches .swatch input[type='checkbox'] { width: 20px; height: 20px; padding: 0; margin: 0 auto; margin-top: 10px; background: url('/assets/fontawesome/svgs/solid/check.svg'); background-size: 0; background-position: center; background-repeat: no-repeat; border: 2px solid #fff; border-radius: 2px; box-shadow: 0 0 0px 1px #bbb; appearance: none; cursor: pointer; transition: all .15s ease; }
 .field-swatches .swatch input[type='radio']:checked { background-color: var(--color-primary); box-shadow: 0 0 0px 1px var(--color-primary); }
 .field-swatches .swatch input[type='checkbox']:checked { background-size: 90%; box-shadow: 0 0 0px 1px var(--color-primary); }
-.field-swatches .swatch:focus-within { outline: 3px solid var(--color-primary); }
+.field-swatches .swatch .input-wrapper { margin-top: 15px; text-align: center; }
+.field-swatches .swatch .input-wrapper .label { display: block; margin-bottom: 5px; font-size: .85rem; font-weight: 600; color: var(--color-primary); }
+.field-swatches .swatch .input-wrapper input[type="number"] { width: 60px; max-width: 100%; padding: 5px; margin: auto; text-align: center; border: 2px solid #cae0ea; }
+.field-swatches .swatch:focus-within:not(.always-selected) { outline: 3px solid var(--color-primary); }
 .field-swatches .swatch:hover { transform: scale(1.01); box-shadow: 0 0 15px rgba(0, 0, 0, .1); opacity: 1; }
 .field-swatches .swatch:hover input[type='radio'],
 .field-swatches .swatch:hover input[type='checkbox'] { box-shadow: 0 0 0px 1px var(--color-primary); transition: all .25s ease-out; }
 .field-swatches .swatch.selected { transform: scale(1.01); box-shadow: 0 0 15px rgba(0, 0, 0, .1); opacity: 1; }
 .field-swatches .swatch.selected img { border-color: var(--color-primary-light); }
+.field-swatches .swatch.always-selected { transform: scale(1.01); box-shadow: 0 0 15px rgba(0, 0, 0, .1); opacity: 1; }
+.field-swatches .swatch.always-selected img { border: none; }
 input#area { display: inline-block; width: 100px; }
 select#area-unit { display: inline-block; width: 75px; }
 #estimate-form { position: relative; }
@@ -231,6 +236,7 @@ select#area-unit { display: inline-block; width: 75px; }
 #estimate-form.processing::after { opacity: 1; pointer-events: all; }
 #estimate-form.processing > * { opacity: .25; pointer-events: none; }
 #estimate-form select[name="type"] { width: 350px; max-width: 100%; }
+#estimate-form .button-container { margin-top: 60px; }
 #resultat .estimated-total { width: 350px; max-width: 100%; padding: 15px 22px; margin: 30px 0; font-size: 1.5em; color: var(--color-tertiary-black); background-color: var(--color-tertiary); border-radius: 2px; }
 #resultat .estimated-total [data-key="total"] { font-weight: 600; }
 #resultat .estimated-total i { font-size: 1rem; color: var(--color-tertiary-darker); }

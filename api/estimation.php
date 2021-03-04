@@ -2,6 +2,12 @@
 
 header("Content-Type: application/json");
 
+$accessoryPrices = [
+	'fan' => 150.00,
+	'chimney' => 150.00,
+	'plumbing_vent' => 60.00,
+];
+
 try {
 	$walkable = $_POST['walkable'] == 'yes';
 	$costPerSquareFeet = $walkable ? 4.00 : 5.50;
@@ -20,9 +26,10 @@ try {
 	}
 
 	// Calculate accessories
-	$accessoriesCost = count($_POST['accessories'] ?? []) * 150;
+	foreach (($_POST['accessories'] ?? []) as $accessoryName => $accessoryCount) {
+		$subtotal += ($accessoryPrices[$accessoryName] ?? 0) * (max(0, intval($accessoryCount)));
+	}
 	
-	$subtotal += $accessoriesCost;
 	$total = $subtotal * 1.14975;
 
 	die(json_encode([

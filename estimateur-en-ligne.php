@@ -33,7 +33,7 @@
 								<!--a href="#explication-aire"><i class="fad fa-circle-question"></i></a-->
 							</label>
 							<div>
-								<input type="number" name="area" id="area" placeholder="1500" min="50" autofocus required>
+								<input type="number" name="area" id="area" placeholder="1500" min="50" required>
 								<select name="area_unit" id="area-unit">
 									<option value="ft2" selected>pi²</option>
 									<option value="m2">m²</option>
@@ -48,13 +48,13 @@
 							</label>
 							<div class="field-swatches">
 								<label class="swatch selected">
-									<img src="/assets/media/placeholder-rectangle.png">
+									<img src="/assets/media/roof-angle-walkable.png">
 									<div class="name">Pente marchable</div>
 									<div class="description">Pentes de 6/12 et moins</div>
 									<input type="radio" name="walkable" value="yes" required checked>
 								</label>
 								<label class="swatch">
-									<img src="/assets/media/placeholder-rectangle.png">
+									<img src="/assets/media/roof-angle-steep.png">
 									<div class="name">Pente abrupte</div>
 									<div class="description">Pentes de plus de 6/12</div>
 									<input type="radio" name="walkable" value="no" required>
@@ -68,17 +68,29 @@
 								<!--a href="#explication-accessoires"><i class="fad fa-circle-question"></i></a-->
 							</label>
 							<div class="field-swatches">
-								<label class="swatch">
-									<img src="/assets/media/placeholder-rectangle.png">
-									<div class="name">Accessoire X</div>
-									<div class="description">Description de l'accessoire</div>
-									<input type="checkbox" name="accessories[]" value="yes">
+								<label class="swatch always-selected">
+									<img src="/assets/media/plumbing-vent.png">
+									<div class="name">Ventilateurs</div>
+									<div class="input-wrapper">
+										<span class="label">Quantité:</span>
+										<input type="number" name="accessories[fan]" value="0" min="0" step="1">
+									</div>
 								</label>
-								<label class="swatch">
-									<img src="/assets/media/placeholder-rectangle.png">
-									<div class="name">Accessoire Y</div>
-									<div class="description">Description de l'accessoire</div>
-									<input type="checkbox" name="accessories[]" value="no">
+								<label class="swatch always-selected">
+									<img src="/assets/media/plumbing-vent.png">
+									<div class="name">Cheminés</div>
+									<div class="input-wrapper">
+										<span class="label">Quantité:</span>
+										<input type="number" name="accessories[chimney]" value="0" min="0" step="1">
+									</div>
+								</label>
+								<label class="swatch always-selected">
+									<img src="/assets/media/plumbing-vent.png">
+									<div class="name">Évents de plomberie</div>
+									<div class="input-wrapper">
+										<span class="label">Quantité:</span>
+										<input type="number" name="accessories[plumbing_vent]" value="0" min="0" step="1">
+									</div>
 								</label>
 							</div>
 						</fieldset>
