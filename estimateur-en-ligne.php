@@ -261,6 +261,10 @@
 			resultCtaForm.addEventListener('submit', function(e) {
 				e.preventDefault();
 
+				if (form.classList.contains('processing')) {
+					return;
+				}
+
 				resultCtaForm.classList.add('processing');
 				
 				const data = new FormData(resultCtaForm);
