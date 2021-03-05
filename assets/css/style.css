@@ -93,6 +93,11 @@ fieldset.optional > label:first-child::after { content: ' (optionnel)'; font-siz
 ::placeholder { font-weight: 400; color: #bbb; }
 ::-moz-placeholder { font-weight: 400; color: #bbb; }
 
+form { position: relative; }
+form::after { content: '\f110'; display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; font-family: 'Font Awesome 6 Pro'; font-size: 2rem; position: absolute; top: 0; left: 0; opacity: 0; animation: fa-spin 2s linear infinite; pointer-events: none; }
+form.processing::after { opacity: 1; pointer-events: all; }
+form.processing > * { opacity: .25; pointer-events: none; }
+
 .custom-file-input { display: block; width: 100%; height: 41px; padding: 8px 12px; padding-left: 35px; margin: 2px 0; font-size: 1rem; font-weight: 400; line-height: 1.35; background-color: var(--color-white); border: 2px solid transparent; border-radius: 2px; outline: none; overflow: hidden; cursor: pointer; position: relative; transition: border-color .25s ease; }
 .custom-file-input i { font-size: 1.25rem; font-weight: 400; line-height: 1; color: var(--color-tertiary-black); position: absolute; top: .5em; left: .5em; } 
 .custom-file-input input { position: absolute; top: 0; left: -1000px; opacity: 0; pointer-events: none; }
@@ -231,15 +236,15 @@ footer form textarea { font-size: .9rem; color: white; background-color: #232729
 .field-swatches .swatch.always-selected img { border: none; }
 input#area { display: inline-block; width: 100px; }
 select#area-unit { display: inline-block; width: 75px; }
-#estimate-form { position: relative; }
-#estimate-form::after { content: '\f110'; display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; font-family: 'Font Awesome 6 Pro'; font-size: 2rem; position: absolute; top: 0; left: 0; opacity: 0; animation: fa-spin 2s linear infinite; pointer-events: none; }
-#estimate-form.processing::after { opacity: 1; pointer-events: all; }
-#estimate-form.processing > * { opacity: .25; pointer-events: none; }
 #estimate-form select[name="type"] { width: 350px; max-width: 100%; }
 #estimate-form .button-container { margin-top: 60px; }
 #resultat .estimated-total { width: 350px; max-width: 100%; padding: 15px 22px; margin: 30px 0; font-size: 1.5em; color: var(--color-tertiary-black); background-color: var(--color-tertiary); border-radius: 2px; }
 #resultat .estimated-total [data-key="total"] { font-weight: 600; }
 #resultat .estimated-total i { font-size: 1rem; color: var(--color-tertiary-darker); }
+#post-estimate-form { width: 450px; max-width: 100%; margin: 60px auto; }
+#post-estimate-inputs { display: none; }
+#cta-form-success { display: none; margin-top: 60px; font-weight: 600; }
+#cta-form-success i { font-size: 5rem; }
 /* <<< ESTIMATOR <<< */
 
 

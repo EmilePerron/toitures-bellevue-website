@@ -16,7 +16,7 @@
 			
 			<section class="tertiary">
 				<div class="container small">
-					<form id="estimate-form" method="post" action="/resultat-estimation.php">
+					<form id="estimate-form">
 						<fieldset class="required">
 							<label>Type de travaux</label>
 							<div>
@@ -107,11 +107,41 @@
 					<h2>Votre estimation</h2>
 					<p>
 						Selon les informations que vous avez entrées, soit pour une <span data-key="type">toiture</span> de <span data-key="area">1500</span> <span data-key="area-unit">pi²</span>
-						à pente <span data-key="angle">marchable</span> <span data-key="accessories"></span>, le coût estimé en date du <?= date('j F Y') ?> est de:
+						à pente <span data-key="angle">marchable</span><span data-key="accessories"></span>, le coût estimé en date du <?= date('j F Y') ?> est de:
 					</p>
 					<div class="estimated-total">
 						<span data-key="total"></span>$
 						<i>(taxes incluses)</i>
+					</div>
+				</div>
+			</section>
+
+			<section id="post-estimate-section" class="primary hidden">
+				<div class="container text-center">
+					<h3>Vous aimeriez qu'on vous contacte afin de discuter de votre projet?</h3>
+					<p>Entrez vos informations ci-dessous, et nous vous contacterons d'ici une journée ouvrable!</p>
+
+					<form id="post-estimate-form" class="text-left">
+						<fieldset class="required">
+							<label for="input-name">Votre nom complet</label>
+							<input type="text" name="name" id="input-name" placeholder="John Doe" required>
+						</fieldset>
+						<fieldset class="required">
+							<label for="input-name">Votre adresse courriel ou numéro de téléphone</label>
+							<input type="text" name="contact" id="input-contact" required>
+						</fieldset>
+						<div class="button-container text-center">
+							<button type="submit">Envoyer ma demande</button>
+						</div>
+
+						<div id="post-estimate-inputs"></div>
+					</form>
+
+					<div id="cta-form-success">
+						<i class="fad fa-circle-check"></i>
+						<p>Votre demande a été envoyée avec succès.</p>
+						<p>Nous vous contacterons dès que possible.</p>
+						<p>Merci de votre confiance!</p>
 					</div>
 				</div>
 			</section>
@@ -122,6 +152,9 @@
 		<script>
 			const form = document.querySelector('#estimate-form');
 			const resultSection = document.querySelector('#resultat');
+			const resultCtaSection = document.querySelector('#post-estimate-section');
+			const resultCtaInputsWrapper = document.querySelector('#post-estimate-inputs');
+			const resultCtaForm = resultCtaSection.querySelector('form');
 
 			// Form submission
 			form.addEventListener('submit', function(e) {
@@ -180,18 +213,26 @@
 
 							if (accessoriesParts.length) {
 								const accessorySentence = accessoriesParts.join(', ').replace(/(.+),\s/, '$1 et ');
-								resultSection.querySelector('[data-key="accessories"]').textContent = 'avec ' + accessorySentence;
+								resultSection.querySelector('[data-key="accessories"]').textContent = ' avec ' + accessorySentence;
 							} else {
 								resultSection.querySelector('[data-key="accessories"]').textContent = '';
 							}
 
 							resultSection.classList.remove('hidden');
+							resultCtaSection.classList.remove('hidden');
+
+							resultCtaInputsWrapper.innerHTML = '';
+							for (const input of form.querySelectorAll('input, select, textarea')) {
+								resultCtaInputsWrapper.appendChild(input.cloneNode(true));
+							}
+							
 							resultSection.scrollIntoView();
 						} else {
 							alert(response.error || "Désolé, une erreur s'est produite. Veuillez ré-essayer plus tard, ou nous contacter via la page Nous joindre.");
 						}
-					}).catch(function(){
+					}).catch(function(err){
 						alert("Désolé, une erreur s'est produite. Veuillez ré-essayer plus tard, ou nous contacter via la page Nous joindre.");
+						console.error(err);
 					}).finally(function(){
 						form.classList.remove('processing');
 					});
@@ -202,7 +243,7 @@
 			for (const swatchInput of document.querySelectorAll('.swatch input')) {
 				swatchInput.addEventListener('change', function() {
 					if (swatchInput.matches('[type="radio"]')) {
-						for (const otherInput of document.querySelectorAll('input[type="radio"][name="' + this.name + '"]')) {
+						for (const otherInput of form.querySelectorAll('input[type="radio"][name="' + this.name + '"]')) {
 							if (otherInput == swatchInput) {
 								continue;
 							}
@@ -215,6 +256,31 @@
 					swatchInput.closest('.swatch').classList.toggle('selected', swatchInput.checked);
 				});
 			}
+
+			// Post estimate CTA form submission
+			resultCtaForm.addEventListener('submit', function(e) {
+				e.preventDefault();
+				
+				const data = new FormData(resultCtaForm);
+				fetch('/api/post-estimation-request.php', {
+					method: 'POST',
+					body: data
+				}).then(function(response) {
+					return response.json();
+				}).then(function(response) {
+					if (response.status == 'ok') {
+						resultCtaForm.style.display = 'none';
+						resultCtaSection.querySelector('#cta-form-success').style.display = 'block';
+					} else {
+						alert(response.error || "Désolé, une erreur s'est produite. Veuillez ré-essayer plus tard, ou nous contacter via la page Nous joindre.");
+					}
+				}).catch(function(err){
+					alert("Désolé, une erreur s'est produite. Veuillez ré-essayer plus tard, ou nous contacter via la page Nous joindre.");
+					console.error(err);
+				}).finally(function(){
+					resultCtaForm.classList.remove('processing');
+				});
+			});
 		</script>
 	</body>
 </html>
