@@ -161,9 +161,9 @@ footer form textarea { font-size: .9rem; color: white; background-color: #232729
 /* >>> HOMEPAGE >>> */
 #hero { display: flex; min-height: max(75vh, 500px); background-image: url('../media/heading-background-blurred.jpg'); background-size: cover; background-position: center top; background-repeat: no-repeat; background-color: var(--color-primary); background-blend-mode: soft-light; }
 #hero h1 { width: 600px; max-width: 100%; font-size: 2.65rem; color: white; }
-#hero .cta { display: inline-flex; padding: 18px 26px; font-size: 1.1rem; font-weight: 600; text-decoration: none; color: white; background-color: var(--color-primary); border-bottom-left-radius: 20px; transition: background-color .25s ease; }
+#hero .cta { display: inline-flex; padding: 18px 26px; font-size: 1.1rem; font-weight: 600; text-decoration: none; color: var(--color-tertiary-darker); background-color: var(--color-tertiary); border-bottom-left-radius: 20px; transition: background-color .25s ease; }
 #hero .cta i { margin-left: 15px; font-size: 1.35rem; line-height: 1.2; position: relative; top: 2px; left: -1px; transition: left .25s ease-in-out; }
-#hero .cta:hover { background-color: var(--color-primary-dark); }
+#hero .cta:hover { background-color: var(--color-white); }
 #hero .cta:hover i { left: 2px; }
 
 #advantages { background: var(--color-white); }
