@@ -206,6 +206,11 @@ footer form textarea { font-size: .9rem; color: white; background-color: #232729
 /* <<< ABOUT PAGE <<< */
 
 
+/* >>> CAREER PAGE >>> */
+#career-decoration { background-image: url('../media/roofer-working.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-blend-mode: soft-light; background-color: var(--color-primary); }
+/* <<< CAREER PAGE <<< */
+
+
 /* >>> CONTACT PAGE >>> */
 .contact-fields > * { display: grid; grid-template-columns: 40px auto; gap: 15px; margin-bottom: 20px; font-size: 1.25rem; }
 .contact-fields i { font-size: 1.5rem; line-height: 1.25; text-align: center; color: var(--color-primary); }

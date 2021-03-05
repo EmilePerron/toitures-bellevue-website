@@ -28,49 +28,52 @@
 				</div>
 			</section>
 
-			<section class="tertiary">
-				<div class="container small">
-					<h2>Envoie ta candidature!</h2>
+			<div class="split-sections">
+				<section id="career-decoration"></section>
+				<section class="tertiary">
+					<div class="container small">
+						<h2>Envoie ta candidature!</h2>
 
-					<form action="fasdf">
-						<div class="two-columns">
+						<form action="fasdf">
+							<div class="two-columns">
+								<fieldset class="required">
+									<label for="input-first-name">Prénom</label>
+									<input type="text" name="first_name" id="input-first-name" required>
+								</fieldset>
+
+								<fieldset class="required">
+									<label for="input-last-name">Nom</label>
+									<input type="text" name="last_name" id="input-last-name" required>
+								</fieldset>
+							</div>
+							
 							<fieldset class="required">
-								<label for="input-first-name">Prénom</label>
-								<input type="text" name="first_name" id="input-first-name" required>
+								<label for="input-phone">Numéro de téléphone</label>
+								<input type="text" name="phone" id="input-phone" required>
 							</fieldset>
 
 							<fieldset class="required">
-								<label for="input-last-name">Nom</label>
-								<input type="text" name="last_name" id="input-last-name" required>
+								<label for="input-email">Adresse courriel</label>
+								<input type="email" name="email" id="input-email" required>
 							</fieldset>
-						</div>
-						
-						<fieldset class="required">
-							<label for="input-phone">Numéro de téléphone</label>
-							<input type="text" name="phone" id="input-phone" required>
-						</fieldset>
 
-						<fieldset class="required">
-							<label for="input-email">Adresse courriel</label>
-							<input type="email" name="email" id="input-email" required>
-						</fieldset>
+							<fieldset class="required">
+								<label for="input-cv">C.V.</label>
+								<input type="file" name="cv" id="input-cv" accept="image/*,.doc,.docx,.pdf">
+							</fieldset>
 
-						<fieldset class="required">
-							<label for="input-cv">C.V.</label>
-							<input type="file" name="cv" id="input-cv" accept="image/*,.doc,.docx,.pdf">
-						</fieldset>
+							<fieldset>
+								<label for="input-message">Message</label>
+								<textarea name="message" id="input-message"></textarea>
+							</fieldset>
 
-						<fieldset>
-							<label for="input-message">Message</label>
-							<textarea name="message" id="input-message"></textarea>
-						</fieldset>
-
-						<div class="button-container text-center">
-							<button type="submit">Envoyer ma candidature</button>
-						</div>
-					</form>
-				</div>
-			</section>
+							<div class="button-container text-center">
+								<button type="submit">Envoyer ma candidature</button>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
 		</main>
 
 		<?php include 'parts/footer.php' ?>
