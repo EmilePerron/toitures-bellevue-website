@@ -184,7 +184,7 @@ footer form textarea { font-size: .9rem; color: white; background-color: #232729
 /* <<< HOMEPAGE <<< */
 
 /* >>> CONTENT PAGES >>> */
-#page-header { display: flex; min-height: 150px; align-items: center; background-image: url('../media/stock-photo-roof-shingles.jpg'); background-size: cover; background-position: bottom center; background-blend-mode: soft-light; background-attachment: fixed; background-color: var(--color-primary); box-shadow: inset 0 0 15px rgba(0, 0, 0, .25); } 
+#page-header { display: flex; min-height: 150px; align-items: center; background-image: url('../media/heading-background-blurred.jpg'); background-size: cover; background-position: top -500px center; background-blend-mode: soft-light; background-attachment: fixed; background-color: var(--color-primary); box-shadow: inset 0 0 15px rgba(0, 0, 0, .25); } 
 #page-header h1 { font-family: var(--font-heading); font-size: 3rem;  line-height: 1.35; color: white; }
 
 #calculator-cta .container { margin-bottom: 20px; }
