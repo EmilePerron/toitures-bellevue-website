@@ -149,6 +149,7 @@ $accessoryNames = [
 						<?php foreach (($_POST['accessories'] ?? []) as $accessory => $count): ?>
 							<strong><?= $accessoryNames[$accessory] ?? '' ?>:</strong> <?= htmlspecialchars(strip_tags($count)) ?><br>
 						<?php endforeach ?>
+						<br>
 
 						<h2>Estimé reçu en ligne</h2>
 						<strong>Sous-total:</strong> <?= number_format($estimate['subtotal'], 2) ?> $<br>

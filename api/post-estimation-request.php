@@ -20,7 +20,7 @@ try {
 	require '../email/post-estimate.php';
 	$emailContent = ob_get_clean();
 	mail(
-		"contact@emileperron.com", 
+		"info@toituresbellevue.com", 
 		"Nouvelle demande via l'estimateur en ligne", 
 		$emailContent, 
 		"From: nepasrepondre@toituresbellevue.com\r\n"

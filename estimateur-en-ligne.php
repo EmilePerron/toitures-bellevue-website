@@ -260,6 +260,8 @@
 			// Post estimate CTA form submission
 			resultCtaForm.addEventListener('submit', function(e) {
 				e.preventDefault();
+
+				resultCtaForm.classList.add('processing');
 				
 				const data = new FormData(resultCtaForm);
 				fetch('/api/post-estimation-request.php', {
