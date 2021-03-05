@@ -69,7 +69,7 @@
 							</label>
 							<div class="field-swatches">
 								<label class="swatch always-selected">
-									<img src="/assets/media/plumbing-vent.png">
+									<!--img src="/assets/media/plumbing-vent.png"-->
 									<div class="name">Ventilateurs</div>
 									<div class="input-wrapper">
 										<span class="label">Quantité:</span>
@@ -77,15 +77,15 @@
 									</div>
 								</label>
 								<label class="swatch always-selected">
-									<img src="/assets/media/plumbing-vent.png">
-									<div class="name">Cheminés</div>
+									<!--img src="/assets/media/plumbing-vent.png"-->
+									<div class="name">Cheminées</div>
 									<div class="input-wrapper">
 										<span class="label">Quantité:</span>
 										<input type="number" name="accessories[chimney]" value="0" min="0" step="1">
 									</div>
 								</label>
 								<label class="swatch always-selected">
-									<img src="/assets/media/plumbing-vent.png">
+									<!--img src="/assets/media/plumbing-vent.png"-->
 									<div class="name">Évents de plomberie</div>
 									<div class="input-wrapper">
 										<span class="label">Quantité:</span>
@@ -107,7 +107,7 @@
 					<h2>Votre estimation</h2>
 					<p>
 						Selon les informations que vous avez entrées, soit pour une <span data-key="type">toiture</span> de <span data-key="area">1500</span> <span data-key="area-unit">pi²</span>
-						à pente <span data-key="angle">marchable</span>, le coût estimé en date du <?= date('j F Y') ?> est de:
+						à pente <span data-key="angle">marchable</span> <span data-key="accessories"></span>, le coût estimé en date du <?= date('j F Y') ?> est de:
 					</p>
 					<div class="estimated-total">
 						<span data-key="total"></span>$
@@ -148,6 +148,43 @@
 							resultSection.querySelector('[data-key="area-unit"]').textContent = data.get('area_unit') == 'ft2' ? 'pi²' : 'm²';
 							resultSection.querySelector('[data-key="angle"]').textContent = data.get('walkable') == 'yes' ? 'marchable' : 'abrupte';
 							resultSection.querySelector('[data-key="total"]').textContent = response.formatted_total;
+
+							const accessoriesParts = [];
+							let accessoryNames = {
+								"fan": {
+									singular: "ventilateur",
+									plural: "ventilateurs",
+									single_count: "un"
+								},
+								"chimney": {
+									singular: "cheminée",
+									plural: "cheminées",
+									single_count: "une"
+								},
+								"plumbing_vent": {
+									singular: "évent de plomberie",
+									plural: "évents de plomberie",
+									single_count: "un"
+								}
+							};
+
+							for (const accessory in accessoryNames) {
+								const count = parseInt(data.get('accessories[' + accessory + ']'));
+
+								if (count == 1) {
+									accessoriesParts.push(accessoryNames[accessory].single_count + ' ' + accessoryNames[accessory].singular);
+								} else if (count > 1) {
+									accessoriesParts.push(count + ' ' + accessoryNames[accessory].plural);
+								}
+							}
+
+							if (accessoriesParts.length) {
+								const accessorySentence = accessoriesParts.join(', ').replace(/(.+),\s/, '$1 et ');
+								resultSection.querySelector('[data-key="accessories"]').textContent = 'avec ' + accessorySentence;
+							} else {
+								resultSection.querySelector('[data-key="accessories"]').textContent = '';
+							}
+
 							resultSection.classList.remove('hidden');
 							resultSection.scrollIntoView();
 						} else {
