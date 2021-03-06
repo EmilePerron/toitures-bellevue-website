@@ -13,8 +13,8 @@ try {
 	ob_end_clean();
 	
 	mail(
-		"contact@emileperron.com", 
-		sprintf("Nouveau message de %s via ToituresBellevue.com", trim(strip_tags($_POST['name']))), 
+		"info@toituresbellevue.com", 
+		sprintf("Nouveau message de %s", trim(strip_tags($_POST['name']))), 
 		$emailContent, 
 		"From: ToituresBellevue.com <nepasrepondre@toituresbellevue.com>\r\n"
 			. "MIME-Version: 1.0\r\n"

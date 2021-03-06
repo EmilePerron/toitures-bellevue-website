@@ -57,8 +57,8 @@ try {
 	}
 
 	mail(
-		"contact@emileperron.com", 
-		sprintf("Nouvelle candidature de %s reçue via ToituresBellevue.com", trim(strip_tags($_POST['first_name'] . ' ' . $_POST['last_name']))), 
+		"info@toituresbellevue.com", 
+		sprintf("Nouvelle candidature de %s", trim(strip_tags($_POST['first_name'] . ' ' . $_POST['last_name']))), 
 		$body,
 		$headers
 	);
