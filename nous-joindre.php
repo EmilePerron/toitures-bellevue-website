@@ -46,7 +46,7 @@
 
 				<section class="tertiary">
 					<div class="container">
-						<form action="fasdf">
+						<form class="basic-contact-form">
 							<h2>Contactez-nous</h2>
 							
 							<fieldset class="required">
@@ -56,7 +56,7 @@
 							
 							<fieldset class="required">
 								<label for="input-phone">Numéro de téléphone</label>
-								<input type="text" name="phone" id="input-phone">
+								<input type="text" name="phone" id="input-phone" required>
 							</fieldset>
 
 							<fieldset>

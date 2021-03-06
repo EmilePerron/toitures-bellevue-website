@@ -1,27 +1,18 @@
 <?php
 
-require 'inc/estimate.php';
-
 header("Content-Type: application/json");
 
 try {
-	if (empty($_POST['name']) || empty($_POST['contact'])) {
+	if (empty($_POST['name']) || empty($_POST['phone'])) {
 		throw new \Exception(); 
 	}
 
-	$estimate = null;
-	try {
-		$estimate = estimateFromPostData();
-	} catch (\Exception $e) {
-		$estimate = ['subtotal' => 0, 'total' => 0];
-	}
-
 	ob_start();
-	require '../email/post-estimate.php';
+	require '../email/contact.php';
 	$emailContent = ob_get_clean();
 	mail(
-		"info@toituresbellevue.com", 
-		"Nouvelle demande via l'estimateur en ligne", 
+		"contact@emileperron.com", 
+		sprintf("Nouveau message de %s via ToituresBellevue.com", trim(strip_tags($_POST['name']))), 
 		$emailContent, 
 		"From: ToituresBellevue.com <nepasrepondre@toituresbellevue.com>\r\n"
 			. "MIME-Version: 1.0\r\n"

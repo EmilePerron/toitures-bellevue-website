@@ -30,7 +30,7 @@
 			<a href="/estimateur-en-ligne" class="button">Obtenir une estimation gratuite</a>
 		</div>
 		
-		<form action="fasdf">
+		<form class="basic-contact-form">
 			<div class="title">Contactez-nous</div>
 			
 			<fieldset class="required">
@@ -40,7 +40,7 @@
 			
 			<fieldset class="required">
 				<label for="input-phone">Numéro de téléphone</label>
-				<input type="text" name="phone" id="input-phone">
+				<input type="text" name="phone" id="input-phone" required>
 			</fieldset>
 
 			<fieldset>
