@@ -39,7 +39,7 @@ try {
 			]));
 		}
 
-		$fileName = preg_replace('~\s~', '', $attachment['name']);
+		$fileName = strtr(preg_replace('~\s~', '', $attachment['name']), 'àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ', 'aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
 		$fileSize = $attachment['size'];
 		$fileType = $attachment['type'];
 

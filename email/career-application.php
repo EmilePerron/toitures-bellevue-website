@@ -123,7 +123,10 @@
                         <strong>Courriel:</strong> <?= htmlspecialchars(strip_tags($_POST['email'] ?? '')) ?><br><br>
                         
                         <h2>Message</h2>
-                        <pre style="font-family: sans-serif; font-size: 14px;"><?= htmlspecialchars(strip_tags($_POST['message'] ?? '')) ?></pre><br>
+                        <pre style="font-family: sans-serif; font-size: 14px;"><?= htmlspecialchars(strip_tags($_POST['message'] ?? '')) ?: 'Aucun message' ?></pre><br>
+
+						<h2>C.V.</h2>
+						<i>Vous trouverez le C.V. en pièce-jointe dans ce courriel.</i>
                       </td>
                     </tr>
                   </table>
