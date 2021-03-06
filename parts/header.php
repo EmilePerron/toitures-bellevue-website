@@ -22,6 +22,9 @@ $currentRoute = str_replace('.php', '', ltrim($_SERVER['PHP_SELF'] ?? '', '/'));
 				<i class="far fa-bars"></i>
 			</a>
 			<ul>
+				<li class="mobile-only-cta">
+					<a href="/estimateur-en-ligne">Estimation en ligne gratuite</a>
+				</li>
 				<li>
 					<a href="/a-propos" class="<?= $currentRoute == 'a-propos' ? 'current' : '' ?>">À propos</a>
 				</li>
