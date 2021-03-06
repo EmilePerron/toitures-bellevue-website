@@ -33,7 +33,7 @@
 								<!--a href="#explication-aire"><i class="fad fa-circle-question"></i></a-->
 							</label>
 							<div>
-								<input type="number" name="area" id="area" placeholder="1500" min="50" required>
+								<input type="number" name="area" id="area" placeholder="1500" min="50" inputmode="numeric" required>
 								<select name="area_unit" id="area-unit">
 									<option value="ft2" selected>pi²</option>
 									<option value="m2">m²</option>

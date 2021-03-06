@@ -40,12 +40,12 @@
 			
 			<fieldset class="required">
 				<label for="input-phone">Numéro de téléphone</label>
-				<input type="text" name="phone" id="input-phone" required>
+				<input type="text" name="phone" id="input-phone" inputmode="tel" required>
 			</fieldset>
 
 			<fieldset>
 				<label for="input-email">Courriel</label>
-				<input type="email" name="email" id="input-email">
+				<input type="email" name="email" id="input-email" inputmode="email">
 			</fieldset>
 
 			<fieldset>

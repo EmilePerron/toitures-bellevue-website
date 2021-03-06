@@ -49,12 +49,12 @@
 							
 							<fieldset class="required">
 								<label for="input-phone">Numéro de téléphone</label>
-								<input type="text" name="phone" id="input-phone" required>
+								<input type="text" name="phone" id="input-phone" inputmode="tel" required>
 							</fieldset>
 
 							<fieldset class="required">
 								<label for="input-email">Adresse courriel</label>
-								<input type="email" name="email" id="input-email" required>
+								<input type="email" name="email" id="input-email" inputmode="email" required>
 							</fieldset>
 
 							<fieldset class="required">
