@@ -29,7 +29,17 @@ try {
 			throw new \Exception();
 		}
 
-		$fileName = $attachment['name'];
+		$finfo = new finfo(FILEINFO_MIME_TYPE);
+		$mimeType = $finfo->file($attachment['tmp_name']);
+
+		if (!(strpos($mimeType, 'image/') === 0 || strpos($mimeType, 'pdf') !== false || strpos($mimeType, 'word') !== false)) {
+			die(json_encode([
+				"status" => "error",
+				"error" => "Votre C.V. ne semble pas être dans un format accepté. Veuillez envoyer un PDF, un document Word ou une image.",
+			]));
+		}
+
+		$fileName = preg_replace('~\s~', '', $attachment['name']);
 		$fileSize = $attachment['size'];
 		$fileType = $attachment['type'];
 
