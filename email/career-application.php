@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Nouveau message reçu sur Toitures Bellevue</title>
+    <title>Nouvelle candidature reçue sur Toitures Bellevue</title>
     <style>
     /* -------------------------------------
         INLINED WITH htmlemail.io/inline
@@ -111,14 +111,14 @@
                     <tr>
                       <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
                         <p>Bonjour,</p>
-                        <p>Ce message a été envoyé via un des formulaires de contact sur le site web de Toitures Bellevue.</p>
-                        <p>Dans la mesure du possible, vous devriez contacter ce visiteur dans un délai maximal de 24h ouvrable.</p>
+                        <p>Une nouvelle candidature a été envoyée via la page Carrière du site web de Toitures Bellevue.</p>
                         <p>Voici ci-bas les informations qui ont été recuillies:</p>
 
                         <hr>
 
                         <h2>Informations de contact</h2>
-                        <strong>Nom:</strong> <?= htmlspecialchars(strip_tags($_POST['name'] ?? '')) ?><br>
+                        <strong>Prénom:</strong> <?= htmlspecialchars(strip_tags($_POST['first_name'] ?? '')) ?><br>
+                        <strong>Nom:</strong> <?= htmlspecialchars(strip_tags($_POST['last_name'] ?? '')) ?><br>
                         <strong>Téléphone:</strong> <?= htmlspecialchars(strip_tags($_POST['phone'] ?? '')) ?><br><br>
                         <strong>Courriel:</strong> <?= htmlspecialchars(strip_tags($_POST['email'] ?? '')) ?><br><br>
                         

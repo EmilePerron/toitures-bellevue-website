@@ -19,6 +19,8 @@ try {
 	ob_start();
 	require '../email/post-estimate.php';
 	$emailContent = ob_get_clean();
+	ob_end_clean();
+	
 	mail(
 		"info@toituresbellevue.com", 
 		"Nouvelle demande via l'estimateur en ligne", 

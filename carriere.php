@@ -34,7 +34,7 @@
 					<div class="container small">
 						<h2>Envoie ta candidature!</h2>
 
-						<form action="fasdf">
+						<form id="application-form" enctype="multipart/form-data">
 							<div class="two-columns">
 								<fieldset class="required">
 									<label for="input-first-name">Prénom</label>
@@ -77,5 +77,40 @@
 		</main>
 
 		<?php include 'parts/footer.php' ?>
+		<script>
+			(function() {
+				const form = document.querySelector('#application-form');
+
+				form.addEventListener('submit', function(e) {
+					e.preventDefault();
+
+					if (form.classList.contains('processing')) {
+						return;
+					}
+
+					form.classList.add('processing');
+					
+					const data = new FormData(form);
+					fetch('/api/application-form.php', {
+						method: 'POST',
+						body: data
+					}).then(function(response) {
+						return response.json();
+					}).then(function(response) {
+						if (response.status == 'ok') {
+							const timeOfDay = (new Date()).getHours() >= 17 ? 'soirée' : 'journée';
+							form.innerHTML = "<div class='basic-form-success'><i class='fad fa-circle-check'></i><p>Votre candidature a été envoyée avec succès! Bonne " + timeOfDay + ", et au plaisir de se reparler!</p></div>";
+						} else {
+							alert(response.error || "Désolé, une erreur s'est produite. Veuillez ré-essayer plus tard, ou nous contacter par téléphone ou courriel.");
+						}
+					}).catch(function(err){
+						alert("Désolé, une erreur s'est produite. Veuillez ré-essayer plus tard, ou nous contacter par téléphone ou courriel.");
+						console.error(err);
+					}).finally(function(){
+						form.classList.remove('processing');
+					});
+				});
+			})();
+		</script>
 	</body>
 </html>

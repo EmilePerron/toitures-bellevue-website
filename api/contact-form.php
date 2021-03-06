@@ -10,6 +10,8 @@ try {
 	ob_start();
 	require '../email/contact.php';
 	$emailContent = ob_get_clean();
+	ob_end_clean();
+	
 	mail(
 		"contact@emileperron.com", 
 		sprintf("Nouveau message de %s via ToituresBellevue.com", trim(strip_tags($_POST['name']))), 
