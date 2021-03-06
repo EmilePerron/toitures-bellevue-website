@@ -73,7 +73,7 @@
 									<div class="name">Ventilateurs</div>
 									<div class="input-wrapper">
 										<span class="label">Quantité:</span>
-										<input type="number" name="accessories[fan]" value="0" min="0" step="1">
+										<input type="number" name="accessories[fan]" value="0" min="0" step="1" inputmode="numeric">
 									</div>
 								</label>
 								<label class="swatch always-selected">
@@ -81,7 +81,7 @@
 									<div class="name">Cheminées</div>
 									<div class="input-wrapper">
 										<span class="label">Quantité:</span>
-										<input type="number" name="accessories[chimney]" value="0" min="0" step="1">
+										<input type="number" name="accessories[chimney]" value="0" min="0" step="1" inputmode="numeric">
 									</div>
 								</label>
 								<label class="swatch always-selected">
@@ -89,7 +89,7 @@
 									<div class="name">Évents de plomberie</div>
 									<div class="input-wrapper">
 										<span class="label">Quantité:</span>
-										<input type="number" name="accessories[plumbing_vent]" value="0" min="0" step="1">
+										<input type="number" name="accessories[plumbing_vent]" value="0" min="0" step="1" inputmode="numeric">
 									</div>
 								</label>
 							</div>
