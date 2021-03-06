@@ -107,7 +107,7 @@
 					<h2>Votre estimation</h2>
 					<p>
 						Selon les informations que vous avez entrées, soit pour une <span data-key="type">toiture</span> de <span data-key="area">1500</span> <span data-key="area-unit">pi²</span>
-						à pente <span data-key="angle">marchable</span><span data-key="accessories"></span>, le coût estimé en date du <?= date('j F Y') ?> est de:
+						à pente <span data-key="angle">marchable</span><span data-key="accessories"></span>, le coût estimé en date du <?= strftime('%e %B %Y') ?> est de:
 					</p>
 					<div class="estimated-total">
 						<span data-key="total"></span>$

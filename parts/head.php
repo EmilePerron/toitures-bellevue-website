@@ -1,5 +1,6 @@
 <?php
 setlocale(LC_ALL, ['fr_CA', 'fr_CA.UTF-8', 'fr']);
+date_default_timezone_set('America/Toronto');
 ?>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
