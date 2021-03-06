@@ -1,5 +1,5 @@
 <?php
-setlocale(LC_ALL, 'fr_CA.UTF-8');
+setlocale(LC_ALL, ['fr_CA', 'fr_CA.UTF-8', 'fr']);
 ?>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
