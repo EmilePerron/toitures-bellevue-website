@@ -281,7 +281,7 @@ select#area-unit { display: inline-block; width: 75px; }
 	header nav { display: flex; justify-content: flex-end; }
 	header nav #navigation-toggle { display: flex; width: 80px; height: 80px; justify-content: center; align-items: center;  margin-right: -2.5vw; font-size: 1.75rem; text-decoration: none; color: var(--color-tertiary-darker); position: relative; z-index: 21; transition: color .1s ease-in-out .05s; }
 	header nav > ul { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100vw; height: 100vh; margin: 0; color: white; background-color: var(--color-primary); overflow: auto; position: absolute; top: 0; left: -100%; z-index: 20; transition: left .35s ease-in-out; }
-	header nav > ul > li:not(:first-child) { margin-top: 15px; margin-left: 0; }
+	header nav > ul > li:not(:first-child) { margin-top: 0; margin-left: 0; }
 	header nav > ul > li > a, 
 	header nav > ul > li .dropdown-toggle { font-size: clamp(18px, 24px, 4vmin); line-height: 1.5; }
 	header nav > ul > li .dropdown-toggle { position: relative; left: .35em; }
@@ -292,7 +292,7 @@ select#area-unit { display: inline-block; width: 75px; }
 	header nav > ul > li > a.current { color: var(--color-primary); filter: brightness(6) hue-rotate(40deg); border: none; }
 	header nav .dropdown { text-align: center; }
 	header nav .dropdown .dropdown-list { position: static; width: auto; max-height: none; }
-	header nav .dropdown .dropdown-list a { font-size: 1rem; color: var(--color-primary-lighter); background-color: transparent; }
+	header nav .dropdown .dropdown-list a { padding-top: 8px; padding-bottom: 8px; font-size: .95rem; color: var(--color-primary-lighter); background-color: transparent; }
 	header nav .dropdown .dropdown-list::before, 
 	header nav .dropdown .dropdown-list::after { display: none; }
 	header nav.open #navigation-toggle { color: white; transition: color .15s ease-in-out .35s; }
@@ -331,8 +331,7 @@ select#area-unit { display: inline-block; width: 75px; }
 
 @media (max-width: 324px) {
 	header nav .dropdown 
-	.dropdown-list a { padding: 8px 14px; font-size: .9rem; }
+	.dropdown-list a { padding: 6px 14px; font-size: .9rem; }
 	header nav > ul > li > a, 
-	header nav > ul > li .dropdown-toggle { padding: 8px 15px; }
-	header nav > ul > li:not(:first-child) { margin-top: 8px; }
+	header nav > ul > li .dropdown-toggle { padding: 6px 15px; }
 }
