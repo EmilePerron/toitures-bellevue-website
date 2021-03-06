@@ -12,7 +12,7 @@
 				<div class="container">
 					<h1>Votre spécialiste en toiture résidentielle et commerciale à Québec</h1>
 					<div class="cta-wrapper">
-						<a href="agadfgdf" class="cta">
+						<a href="/estimateur-en-ligne" class="cta">
 							Obtenez votre estimation en ligne dès maintenant
 							<i class="far fa-angle-right"></i>
 						</a>
@@ -44,7 +44,7 @@
 				<div class="container">
 					<h2>Votre toiture, on s’en occupe</h2>
 					<p>La réparation ou la réfection d’une toiture est l’une des rénovations les plus importantes et les plus coûteuses que l’on peut apporter à sa maison. Vaut mieux choisir la meilleure entreprise pour le faire! Chez Toitures Bellevue, vous serez en toute confiance et aurez l’esprit tranquille.</p>
-					<a href="#" class="button">En savoir plus</a>
+					<a href="/a-propos" class="button">En savoir plus</a>
 				</div>
 			</section>
 

@@ -133,6 +133,7 @@ header nav .dropdown .dropdown-list a { display: block; padding: 12px 14px; font
 header nav .dropdown .dropdown-list a:hover { background-color: var(--color-tertiary-dark); }
 header nav .dropdown .dropdown-toggle::after { content: '\f107'; margin-left: .35em; font-family: 'Font Awesome 6 Pro'; font-size: 16px; position: relative; top: 1px; }
 header nav .dropdown:hover .dropdown-list { max-height: 400px; box-shadow: 0 7px 8px rgba(0, 0, 0, .075); transition: max-height .5s ease, box-shadow .5s ease .1s; }
+header nav #navigation-toggle { display: none; }
 body.stick-nav header { position: fixed; top: 0; box-shadow: 0 3px 15px rgba(0, 0, 0, .075); transition: box-shadow .35s ease; }
 body.stick-nav header .container { height: 90px; transition: height .35s ease-in-out; }
 body.stick-nav header .branding img { width: 65%; transition: all .35s ease-in-out; }
@@ -145,7 +146,7 @@ footer .contact .links { margin-top: 20px; }
 footer .contact .links > * { margin-top: 5px; }
 footer .contact .links i { margin-right: 5px; }
 footer .contact .license { margin-top: 20px; font-size: .9rem; }
-footer form { width: 350px; margin-top: -5px; }
+footer form { width: 350px; max-width: 100%; margin-top: -5px; }
 footer form .title { padding-bottom: 10px; margin-bottom: 10px; font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; border-bottom: 2px solid #232729; }
 footer form input, 
 footer form select, 
@@ -260,7 +261,7 @@ select#area-unit { display: inline-block; width: 75px; }
 	.split-sections .container { width: 100%; max-width: 100%; }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 	form .two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 
 	#contact-cta { position: relative; }
@@ -268,6 +269,70 @@ select#area-unit { display: inline-block; width: 75px; }
 	#contact-cta .container { padding-right: 45%; }
 }
 
+@media (max-width: 991px) {
+	body { border-top-width: 90px; }
+
+	#help-bar { display: none; }
+	header { position: fixed; top: 0; }
+	header .container, 
+	body.stick-nav header .container { height: 90px; transition: none; }
+	header .branding img, 
+	body.stick-nav header .branding img { width: 115px; transition: none; }
+	header nav { display: flex; justify-content: flex-end; }
+	header nav #navigation-toggle { display: flex; width: 80px; height: 80px; justify-content: center; align-items: center;  margin-right: -2.5vw; font-size: 1.75rem; text-decoration: none; color: var(--color-tertiary-darker); position: relative; z-index: 21; transition: color .1s ease-in-out .05s; }
+	header nav > ul { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100vw; height: 100vh; margin: 0; color: white; background-color: var(--color-primary); overflow: auto; position: absolute; top: 0; left: -100%; z-index: 20; transition: left .35s ease-in-out; }
+	header nav > ul > li:not(:first-child) { margin-top: 15px; margin-left: 0; }
+	header nav > ul > li > a, 
+	header nav > ul > li .dropdown-toggle { font-size: clamp(18px, 24px, 4vmin); line-height: 1.5; }
+	header nav > ul > li .dropdown-toggle { position: relative; left: .35em; }
+	header nav > ul > li > a:hover, 
+	header nav > ul > .dropdown:hover .dropdown-toggle { color: var(--color-white); } 
+	header nav > ul > .dropdown:hover .dropdown-list { box-shadow: none; border-radius: 0; }
+	header nav .dropdown .dropdown-list a:hover { color: var(--color-tertiary); background-color: transparent; }
+	header nav > ul > li > a.current { color: var(--color-primary); filter: brightness(6) hue-rotate(40deg); border: none; }
+	header nav .dropdown { text-align: center; }
+	header nav .dropdown .dropdown-list { position: static; width: auto; max-height: none; }
+	header nav .dropdown .dropdown-list a { font-size: 1rem; color: var(--color-primary-lighter); background-color: transparent; }
+	header nav .dropdown .dropdown-list::before, 
+	header nav .dropdown .dropdown-list::after { display: none; }
+	header nav.open #navigation-toggle { color: white; transition: color .15s ease-in-out .35s; }
+	header nav.open > ul { left: 0; transition: left .5s ease-in-out; }
+
+	footer .container { display: block; }
+	footer form { width: 100%; margin-top: 60px; }
+
+	#page-header { background-attachment: scroll; background-size: cover; background-position: center top; }
+
+	#hero h1 { font-size: clamp(20px, 2.65rem, 8.5vw); }
+	#hero .cta { padding-right: 50px; position: relative; }
+	#hero .cta i { position: absolute; top: calc(50% - .6em); left: inherit; right: 20px; }
+
+	#services ul { grid-template-columns: repeat(2, 1fr); }
+
+	#garantie ul { grid-template-columns: 1fr; gap: 30px; }
+
+	.article-listing { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 768px) {
+	#page-header h1 { font-size: 2.25rem; }
+	#page-header + section { padding-top: 60px; }
+
+	#advantages .container { flex-direction: column; }
+	#services ul { grid-template-columns: 1fr; }
+
+	#partenaires ul { grid-template-columns: repeat(2, 1fr); }
+
+	#contact-cta { padding-bottom: 0; }
+	#contact-cta::after { content: ' '; display: block; width: 100%; height: 0; padding-bottom: 66%; margin-top: 90px; background-image: url('https://image.shutterstock.com/z/stock-photo-smiling-young-unshaven-business-man-in-light-shirt-protective-construction-helmet-isolated-on-grey-1687397161.jpg'); background-size: cover; background-position: center top; }
+
 	.field-swatches { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+}
+
+@media (max-width: 324px) {
+	header nav .dropdown 
+	.dropdown-list a { padding: 8px 14px; font-size: .9rem; }
+	header nav > ul > li > a, 
+	header nav > ul > li .dropdown-toggle { padding: 8px 15px; }
+	header nav > ul > li:not(:first-child) { margin-top: 8px; }
 }

@@ -18,6 +18,9 @@ $currentRoute = str_replace('.php', '', ltrim($_SERVER['PHP_SELF'] ?? '', '/'));
 			</a>
 		</div>
 		<nav>
+			<a href="#" role="button" id="navigation-toggle">
+				<i class="far fa-bars"></i>
+			</a>
 			<ul>
 				<li>
 					<a href="/a-propos" class="<?= $currentRoute == 'a-propos' ? 'current' : '' ?>">À propos</a>
