@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-CA">
 	<head>
 		<title>Ventilation et isolation d’entre-toit - Toitures Bellevue</title>
 		<?php include '../parts/head.php' ?>

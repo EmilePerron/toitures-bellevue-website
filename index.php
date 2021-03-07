@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-CA">
 	<head>
 		<title>Toitures Bellevue - Votre spécialiste en toiture à Québec</title>
 		<?php include 'parts/head.php' ?>

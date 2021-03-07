@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-CA">
 	<head>
 		<title>À propos - Toitures Bellevue</title>
 		<?php include 'parts/head.php' ?>
