@@ -246,7 +246,7 @@ footer form textarea { font-size: .9rem; color: white; background-color: #232729
 .field-swatches .swatch.always-selected img { border: none; }
 input#area { display: inline-block; width: 100px; vertical-align: top; }
 select#area-unit { display: inline-block; width: 75px; vertical-align: top; }
-#estimate-form select[name="type"] { width: 350px; max-width: 100%; }
+#estimate-form select[name="type"] { width: 310px; max-width: 100%; }
 #estimate-form .button-container { margin-top: 60px; }
 #resultat .estimated-total { width: 350px; max-width: 100%; padding: 15px 22px; margin: 30px 0; font-size: 1.5em; color: var(--color-tertiary-black); background-color: var(--color-tertiary); border-radius: 2px; }
 #resultat .estimated-total [data-key="total"] { font-weight: 600; }
