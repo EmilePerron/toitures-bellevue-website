@@ -273,6 +273,10 @@ select#area-unit { display: inline-block; width: 75px; vertical-align: top; }
 	#contact-cta .container { padding-right: 45%; }
 }
 
+@media (max-width: 1080px) {
+	#page-header { background-attachment: scroll; background-size: cover; background-position: center top; }
+}
+
 @media (max-width: 991px) {
 	body { border-top-width: 90px; }
 
@@ -306,8 +310,6 @@ select#area-unit { display: inline-block; width: 75px; vertical-align: top; }
 
 	footer .container { display: block; }
 	footer form { width: 100%; margin-top: 60px; }
-
-	#page-header { background-attachment: scroll; background-size: cover; background-position: center top; }
 
 	#hero h1 { font-size: clamp(20px, 2.65rem, 8.5vw); }
 	#hero .cta { padding-right: 50px; position: relative; }
