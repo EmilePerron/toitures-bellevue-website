@@ -13,6 +13,10 @@ RewriteRule ^(.*)$ $1.php
 RedirectMatch 404 /\.git
 RedirectMatch 404 /api/inc
 
+ErrorDocument 404 /_errors/404.php
+ErrorDocument 403 /_errors/500.php
+ErrorDocument 500 /_errors/500.php
+
 <IfModule mod_deflate.c>
   # Compress HTML, CSS, JavaScript, Text, XML and fonts
   AddOutputFilterByType DEFLATE application/javascript
