@@ -40,3 +40,95 @@ date_default_timezone_set('America/Toronto');
 		 }
 	</script>
 <?php endif ?>
+
+<script type="application/ld+json">
+{
+	"@context": "http://www.schema.org",
+	"@type": "LocalBusiness",
+	"@id": "https://www.toituresbellevue.com",
+	"name": "Toitures Bellevue",
+	"url": "https://www.toituresbellevue.com",
+	"logo": "https://www.toituresbellevue.com/assets/media/logo_toiture-bellevue.png",
+	"image": "https://www.toituresbellevue.com/assets/media/og-image.jpg",
+	"description": "Votre spécialiste en toiture résidentielle et commerciale à Québec",
+	"email": "info@toituresbellevue.com",
+	"telephone": "+15819096111",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "13838 rue Longchamps",
+		"addressLocality": "Québec",
+		"addressRegion": "Québec",
+		"postalCode": "G3E 1P2",
+		"addressCountry": "CA"
+	},
+	"contactPoint": {
+		"@type": "ContactPoint",
+		"telephone": "+15819096111",
+		"contactType" "Service à la clientèle"
+	},
+	"areaServed": {
+		"@type": "City",
+		"name": "Québec"
+	},
+	"hasOfferCatalog": {
+		"@type": "OfferCatalog",
+		"name": "Cleaning services",
+		"itemListElement": [
+			{
+				"@type": "OfferCatalog",
+				"name": "Travaux de toiture",
+				"itemListElement": [
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Pose de nouvelle toiture"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Réfection de toiture",
+							"url": "https://www.toituresbellevue.com/services/refection-de-toiture"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Réparation de toiture",
+							"url": "https://www.toituresbellevue.com/services/reparation-de-toiture"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Inspection de toiture",
+							"url": "https://www.toituresbellevue.com/services/inspection-de-toiture"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Ventilation et isolation d'entre-toit",
+							"url": "https://www.toituresbellevue.com/services/ventilation-et-isolation-entre-toit"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Déneigement de toiture",
+							"url": "https://www.toituresbellevue.com/services/deneigement-de-toiture"
+						}
+					}
+				]
+			}
+		]
+	},
+	"sameAs": ["https://www.facebook.com/Toitures-Bellevue-104746334930300/"]
+}
+</script>
