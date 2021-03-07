@@ -64,7 +64,7 @@ date_default_timezone_set('America/Toronto');
 	"contactPoint": {
 		"@type": "ContactPoint",
 		"telephone": "+15819096111",
-		"contactType" "Service à la clientèle"
+		"contactType": "Service à la clientèle"
 	},
 	"areaServed": {
 		"@type": "City",
