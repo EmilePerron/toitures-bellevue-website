@@ -3,6 +3,7 @@
 	<head>
 		<title>Toitures Bellevue - Votre spécialiste en toiture à Québec</title>
 		<?php include 'parts/head.php' ?>
+		<link rel="canonical" href="https://www.toituresbellevue.com/" />
 	</head>
 	<body>
 		<?php include 'parts/header.php' ?>

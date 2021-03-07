@@ -20,3 +20,5 @@ date_default_timezone_set('America/Toronto');
 <meta name="msapplication-TileColor" content="#b91d47">
 <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
 <meta name="theme-color" content="#991747">
+<meta property="og:image" content="/assets/media/og-image.jpg">
+<meta name="twitter:card" content="summary">

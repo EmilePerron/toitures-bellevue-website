@@ -10,6 +10,10 @@
 			
 			<div class="links">
 				<div>
+					<i class="fab fa-facebook"></i>
+					<a href="https://www.facebook.com/Toitures-Bellevue-104746334930300/" target="_blank">Retrouvez-nous sur Facebook</a>
+				</div>
+				<div>
 					<i class="fas fa-envelope"></i>
 					<a href="mailto:info@toituresbellevue.com">info@toituresbellevue.com</a>
 				</div>
