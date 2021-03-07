@@ -65,5 +65,4 @@
 </footer>
 
 <script src="/assets/js/main.js"></script>
-<script src="https://cdn.eckinox.net/EmilePerron/deprecated-browser-notice/notify.js"></script>
-<script src="https://cdn.eckinox.net/EmilePerron/css-vars-polyfill/polyfill.js"></script>
+<script src="https://cdn.eckinox.net/EmilePerron/deprecated-browser-notice/notify-ie11.js"></script>
