@@ -343,3 +343,11 @@ select#area-unit { display: inline-block; width: 75px; vertical-align: top; }
 	header nav > ul > li > a, 
 	header nav > ul > li .dropdown-toggle { padding: 6px 15px; }
 }
+
+
+/* START - TEMPORARY HIDING STYLES WHILE WAITING FOR PICTURE */
+#contact-cta { padding-bottom: 120px !important; }
+#contact-cta::before,
+#contact-cta::after { display: none !important; background-image: none !important; }
+#contact-cta .container { padding-right: 0 !important; }
+/* END - TEMPORARY HIDING STYLES WHILE WAITING FOR PICTURE */
