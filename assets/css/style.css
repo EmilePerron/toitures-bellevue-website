@@ -142,7 +142,7 @@ body.stick-nav header { position: fixed; top: 0; box-shadow: 0 3px 15px rgba(0, 
 body.stick-nav header .container { height: 90px; transition: height .35s ease-in-out; }
 body.stick-nav header .branding img { width: 65%; transition: all .35s ease-in-out; }
 
-footer { padding: 90px 0; min-height: 250px; color: var(--color-white); background-color: var(--color-black); }
+footer { max-width: 100%; min-height: 250px; padding: 90px 0; color: var(--color-white); background-color: var(--color-black); overflow: hidden; }
 footer .container { display: flex; justify-content: space-between; }
 footer a:not(.button) { color: var(--color-white); transition: color .15s ease; }
 footer a:not(.button):hover { color: var(--color-primary-light); }
