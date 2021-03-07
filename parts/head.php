@@ -22,3 +22,21 @@ date_default_timezone_set('America/Toronto');
 <meta name="theme-color" content="#991747">
 <meta property="og:image" content="/assets/media/og-image.jpg">
 <meta name="twitter:card" content="summary">
+
+<?php if (strpos($_SERVER['SERVER_NAME'] ?? '', 'dev.toituresbellevue.com') === false && strpos($_SERVER['SERVER_NAME'] ?? '', 'localhost') === false) : ?>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FRSJ5Z332"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-3FRSJ5Z332');
+	</script>
+<?php else : ?>
+	<script>
+		function ga() {
+			console.log('DEVMODE: ga() function called with following arguments:', {...arguments});
+		 }
+	</script>
+<?php endif ?>

@@ -100,6 +100,8 @@
 						if (response.status == 'ok') {
 							const timeOfDay = (new Date()).getHours() >= 17 ? 'soirée' : 'journée';
 							form.innerHTML = "<div class='basic-form-success'><i class='fad fa-circle-check'></i><p>Votre candidature a été envoyée avec succès! Bonne " + timeOfDay + ", et au plaisir de se reparler!</p></div>";
+
+							ga('send', 'event', 'Form submissions', 'Career application form');
 						} else {
 							alert(response.error || "Désolé, une erreur s'est produite. Veuillez ré-essayer plus tard, ou nous contacter par téléphone ou courriel.");
 						}

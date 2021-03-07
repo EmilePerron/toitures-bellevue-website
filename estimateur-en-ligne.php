@@ -227,6 +227,8 @@
 							}
 							
 							resultSection.scrollIntoView();
+
+							ga('send', 'event', 'Form submissions', 'Estimator', 'Estimator step 1');
 						} else {
 							alert(response.error || "Désolé, une erreur s'est produite. Veuillez ré-essayer plus tard, ou nous contacter via la page Nous joindre.");
 						}
@@ -277,6 +279,7 @@
 					if (response.status == 'ok') {
 						resultCtaForm.style.display = 'none';
 						resultCtaSection.querySelector('#cta-form-success').style.display = 'block';
+						ga('send', 'event', 'Form submissions', 'Estimator', 'Estimator step 2');
 					} else {
 						alert(response.error || "Désolé, une erreur s'est produite. Veuillez ré-essayer plus tard, ou nous contacter via la page Nous joindre.");
 					}
