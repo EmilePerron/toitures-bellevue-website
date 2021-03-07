@@ -22,6 +22,7 @@ date_default_timezone_set('America/Toronto');
 <meta name="theme-color" content="#991747">
 <meta property="og:image" content="/assets/media/og-image.jpg">
 <meta name="twitter:card" content="summary">
+<link rel="preload" as="image" href="/assets/media/heading-background-blurred.jpg" />
 
 <?php if (strpos($_SERVER['SERVER_NAME'] ?? '', 'dev.toituresbellevue.com') === false && strpos($_SERVER['SERVER_NAME'] ?? '', 'localhost') === false) : ?>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
