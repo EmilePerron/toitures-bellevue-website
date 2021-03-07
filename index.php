@@ -92,7 +92,7 @@
 				</div>
 			</section>
 
-			<section class="tertiary diagonal-top">
+			<!--section class="tertiary diagonal-top">
 				<div class="container">
 					<h2>Nos plus récents articles</h2>
 					<div class="article-listing button-tertiary">
@@ -108,7 +108,7 @@
 						</a>
 					</div>
 				</div>
-			</section>
+			</section-->
 		</main>
 
 		<?php include 'parts/footer.php' ?>
