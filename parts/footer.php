@@ -64,5 +64,5 @@
 	</div>
 </footer>
 
-<script src="/assets/js/main.js"></script>
+<script src="/assets/js/main.js?v=0.2.0"></script>
 <script src="https://cdn.eckinox.net/EmilePerron/deprecated-browser-notice/notify-ie11.js"></script>
