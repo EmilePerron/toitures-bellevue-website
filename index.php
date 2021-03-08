@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr-CA">
 	<head>
-		<title>Toitures Bellevue - Votre spécialiste en toiture à Québec</title>
+		<title>Toitures Bellevue — Votre spécialiste en toiture à Québec</title>
 		<?php include 'parts/head.php' ?>
+		<meta name="description" content="Le couvreur de choix à Québec pour vos travaux de toiture résidentielle et commerciale. Obtenez une estimation en ligne en 2 minutes, gratuitement!">
 		<link rel="canonical" href="https://www.toituresbellevue.com/" />
 	</head>
 	<body>

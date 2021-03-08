@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr-CA">
 	<head>
-		<title>Inspection de toiture - Toitures Bellevue</title>
+		<title>Inspection de toiture — Toitures Bellevue</title>
 		<?php include '../parts/head.php' ?>
+		<meta name="description" content="Faites affaire avec votre spécialiste en toitures résidentielles et commerciales pour l'inspection de votre toiture à Québec.">
 	</head>
 	<body>
 		<?php include '../parts/header.php' ?>

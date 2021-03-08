@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr-CA">
 	<head>
-		<title>Estimateur en ligne - Toitures Bellevue</title>
+		<title>Estimateur en ligne — Toitures Bellevue</title>
 		<?php include 'parts/head.php' ?>
+		<meta name="description" content="Obtenez une estimation gratuite en ligne en 2 minutes pour vos travaux de réfaction de toiture à Québec.">
 	</head>
 	<body>
 		<?php include 'parts/header.php' ?>

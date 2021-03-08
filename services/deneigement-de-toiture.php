@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr-CA">
 	<head>
-		<title>Déneigement de toiture - Toitures Bellevue</title>
+		<title>Déneigement de toiture — Toitures Bellevue</title>
 		<?php include '../parts/head.php' ?>
+		<meta name="description" content="Cet hiver, faites affaire avec le spécialiste en toitures résidentielles et commerciales à Québec pour le déneigement de votre toiture.">
 	</head>
 	<body>
 		<?php include '../parts/header.php' ?>

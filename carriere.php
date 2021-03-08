@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr-CA">
 	<head>
-		<title>Carrière - Toitures Bellevue</title>
+		<title>Carrière — Toitures Bellevue</title>
 		<?php include 'parts/head.php' ?>
+		<meta name="description" content="Vous cherchez un emploi de couvreur à Québec? Rejoignez notre équipe de jeunes qui ont plus de 500 toitures derrière la cravate!">
 	</head>
 	<body>
 		<?php include 'parts/header.php' ?>

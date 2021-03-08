@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr-CA">
 	<head>
-		<title>Réparation de toiture - Toitures Bellevue</title>
+		<title>Réparation de toiture — Toitures Bellevue</title>
 		<?php include '../parts/head.php' ?>
+		<meta name="description" content="Faites affaire avec le spécialiste en toitures résidentielles et commerciales à Québec pour la réparation de votre toiture à Québec.">
 	</head>
 	<body>
 		<?php include '../parts/header.php' ?>

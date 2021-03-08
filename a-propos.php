@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr-CA">
 	<head>
-		<title>À propos - Toitures Bellevue</title>
+		<title>À propos — Toitures Bellevue</title>
 		<?php include 'parts/head.php' ?>
+		<meta name="description" content="Toitures Bellevue, votre spécialiste en toiture résidentielle et commerciale à Québec, Beauport, Charlesbourg, Sainte-Foy et les environs!">
 	</head>
 	<body>
 		<?php include 'parts/header.php' ?>
@@ -65,6 +66,27 @@
 						</li>
 					</ul>
 					<p class="text-center">Numéro de licence RBQ: 5791-2487-01</p>
+				</div>
+			</section>
+
+			<section>
+				<div class="container">
+					<h2>Secteurs désservis</h2>
+					<p>Toiture Bellevue est le spécialiste en toiture résidentielle dans les secteurs suivants:</p>
+					<ul>
+						<li>Beauport</li>
+						<li>Boischatel</li>
+						<li>Charlesbourg</li>
+						<li>Château-Richer</li>
+						<li>L'Ancienne-Lorette</li>
+						<li>Lac-Beauport</li>
+						<li>Lévis</li>
+						<li>Loretteville</li>
+						<li>Québec</li>
+						<li>Sainte-Anne-de-Beaupré</li>
+						<li>Sainte-Foy</li>
+						<li>Stoneham</li>
+					</ul>
 				</div>
 			</section>
 		</main>

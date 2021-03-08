@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr-CA">
 	<head>
-		<title>Ventilation et isolation d’entre-toit - Toitures Bellevue</title>
+		<title>Ventilation et isolation d’entre-toit — Toitures Bellevue</title>
 		<?php include '../parts/head.php' ?>
+		<meta name="description" content="Faites affaire avec le spécialiste en toitures résidentielles et commerciales à Québec pour la ventilation et l'isolation d'entre-toit de votre toiture.">
 	</head>
 	<body>
 		<?php include '../parts/header.php' ?>
