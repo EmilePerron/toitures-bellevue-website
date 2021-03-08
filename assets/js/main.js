@@ -45,7 +45,7 @@
 					const timeOfDay = (new Date()).getHours() >= 17 ? 'soirée' : 'journée';
 					form.innerHTML = "<div class='basic-form-success'><i class='fad fa-circle-check'></i><p>Votre message a été envoyé avec succès! Vous devriez recevoir une réponse dans un délai de 24h ouvrable. Merci, et bonne " + timeOfDay + "!</p></div>";
 
-					ga('send', 'event', 'Form submissions', 'Contact form', 'Generic contact form');
+					gtag('event', 'Form submissions', {'event_category': 'Contact form', 'event_label': 'Generic contact form'});
 				} else {
 					alert(response.error || "Désolé, une erreur s'est produite. Veuillez ré-essayer plus tard, ou nous contacter par téléphone ou courriel.");
 				}

@@ -36,8 +36,8 @@ date_default_timezone_set('America/Toronto');
 	</script>
 <?php else : ?>
 	<script>
-		function ga() {
-			console.log('DEVMODE: ga() function called with following arguments:', {...arguments});
+		function gtag() {
+			console.log('DEVMODE: gtag() function called with following arguments:', {...arguments});
 		 }
 	</script>
 <?php endif ?>
