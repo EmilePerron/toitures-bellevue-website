@@ -1,5 +1,6 @@
 <?php
 
+include 'inc/saveFormPayload.php';
 require 'inc/estimate.php';
 
 header("Content-Type: application/json");

@@ -1,5 +1,7 @@
 <?php
 
+include 'inc/saveFormPayload.php';
+
 header("Content-Type: application/json");
 
 try {

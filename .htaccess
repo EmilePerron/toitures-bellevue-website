@@ -16,6 +16,7 @@ RewriteRule ^(.*)$ $1.php
 
 # Prevent access to sensitive directories
 RedirectMatch 404 /\.git
+RedirectMatch 404 /_forms
 RedirectMatch 404 /api/inc
 
 ErrorDocument 404 /_errors/404.php
