@@ -280,7 +280,7 @@
 					if (response.status == 'ok') {
 						resultCtaForm.style.display = 'none';
 						resultCtaSection.querySelector('#cta-form-success').style.display = 'block';
-						gtag('event', 'Form submissions', {'event_category': 'Estimator', 'event_label': 'Estimator step 1'});
+						gtag('event', 'Form submissions', {'event_category': 'Estimator', 'event_label': 'Estimator step 2'});
 					} else {
 						alert(response.error || "Désolé, une erreur s'est produite. Veuillez ré-essayer plus tard, ou nous contacter via la page Nous joindre.");
 					}
