@@ -71,7 +71,7 @@ date_default_timezone_set('America/Toronto');
 		"@type": "City",
 		"name": "Québec"
 	},
-	"priceRange": "$-$$"
+	"priceRange": "$-$$",
 	"hasOfferCatalog": {
 		"@type": "OfferCatalog",
 		"name": "Cleaning services",
