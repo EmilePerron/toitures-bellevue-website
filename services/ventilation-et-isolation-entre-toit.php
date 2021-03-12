@@ -3,7 +3,7 @@
 	<head>
 		<title>Ventilation et isolation d’entre-toit — Toitures Bellevue</title>
 		<?php include '../parts/head.php' ?>
-		<meta name="description" content="Faites affaire avec le spécialiste en toitures résidentielles et commerciales à Québec pour la ventilation et l'isolation d'entre-toit de votre toiture.">
+		<meta name="description" content="Évitez les problèmes d’humidité et de perte de chaleur en assurant une ventilation et une isolation adéquates de votre entre-toit. Nous évaluons et effectuons les travaux!">
 	</head>
 	<body>
 		<?php include '../parts/header.php' ?>

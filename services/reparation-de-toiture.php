@@ -3,7 +3,7 @@
 	<head>
 		<title>Réparation de toiture — Toitures Bellevue</title>
 		<?php include '../parts/head.php' ?>
-		<meta name="description" content="Faites affaire avec le spécialiste en toitures résidentielles et commerciales à Québec pour la réparation de votre toiture à Québec.">
+		<meta name="description" content="Assurez la durabilité de votre toiture! Contactez-nous pour le remplacement de bardeaux, la réparation de solin et de soffites, la ventilation et l'isolation d’entre-toit.">
 	</head>
 	<body>
 		<?php include '../parts/header.php' ?>

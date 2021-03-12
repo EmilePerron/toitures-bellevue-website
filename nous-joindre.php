@@ -3,7 +3,7 @@
 	<head>
 		<title>Nous joindre — Toitures Bellevue</title>
 		<?php include 'parts/head.php' ?>
-		<meta name="description" content="Obtenez une estimation gratuite en ligne en 2 minutes pour vos travaux de réfaction et de nouvelle toiture à Québec.">
+		<meta name="description" content="Le couvreur de choix à Québec pour vos travaux de toiture résidentielle et commerciale. Obtenez une estimation en ligne en 2 minutes, gratuitement!">
 	</head>
 	<body>
 		<?php include 'parts/header.php' ?>

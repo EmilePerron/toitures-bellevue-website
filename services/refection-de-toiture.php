@@ -3,7 +3,7 @@
 	<head>
 		<title>Réfection de toiture — Toitures Bellevue</title>
 		<?php include '../parts/head.php' ?>
-		<meta name="description" content="Le couvreur de choix à Québec pour vos travaux de toiture résidentielle et commerciale. Obtenez une estimation en ligne en 2 minutes, gratuitement!">
+		<meta name="description" content="La toiture de votre maison est à refaire? Ça tombe bien, c’est notre spécialité! Obtenez une estimation en ligne en 2 minutes, gratuitement!">
 	</head>
 	<body>
 		<?php include '../parts/header.php' ?>

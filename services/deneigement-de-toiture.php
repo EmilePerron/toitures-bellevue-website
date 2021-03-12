@@ -3,7 +3,7 @@
 	<head>
 		<title>Déneigement de toiture — Toitures Bellevue</title>
 		<?php include '../parts/head.php' ?>
-		<meta name="description" content="Cet hiver, faites affaire avec le spécialiste en toitures résidentielles et commerciales à Québec pour le déneigement de votre toiture.">
+		<meta name="description" content="Évitez l’usure prématurée du revêtement de votre toiture et planifiez un déneigement de toiture avec un professionnel chez Toitures Bellevue.">
 	</head>
 	<body>
 		<?php include '../parts/header.php' ?>

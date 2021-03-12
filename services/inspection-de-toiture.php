@@ -3,7 +3,7 @@
 	<head>
 		<title>Inspection de toiture — Toitures Bellevue</title>
 		<?php include '../parts/head.php' ?>
-		<meta name="description" content="Faites affaire avec votre spécialiste en toitures résidentielles et commerciales pour l'inspection de votre toiture à Québec.">
+		<meta name="description" content="Vous aimeriez connaître la durée de vie restante de votre toiture ou soupçonnez des problèmes d'humidité ou de chauffage? Une inspection de toiture est de mise!">
 	</head>
 	<body>
 		<?php include '../parts/header.php' ?>
