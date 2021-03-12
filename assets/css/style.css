@@ -265,6 +265,10 @@ select#area-unit { display: inline-block; width: 75px; vertical-align: top; }
 	.split-sections .container { width: 100%; max-width: 100%; }
 }
 
+@media (min-width: 1081px) and (max-height: 830px) {
+	#page-header { background-position: center bottom; }
+}
+
 @media (min-width: 769px) {
 	form .two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 
