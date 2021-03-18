@@ -7,7 +7,7 @@ $currentRoute = str_replace('.php', '', ltrim($_SERVER['PHP_SELF'] ?? '', '/'));
 			<i class="fas fa-phone-alt"></i>&nbsp;
 			1 581 909-6111
 		</a>
-		<a href="/estimateur-en-ligne" class="cta">Obtenir une estimation gratuite</a>
+		<a href="/estimateur-en-ligne" class="cta">Obtenir une estimation en ligne</a>
 	</div>
 </nav>
 <header id="header">
