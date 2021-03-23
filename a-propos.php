@@ -89,6 +89,12 @@
 					</ul>
 				</div>
 			</section>
+
+			<img srcset="/assets/media/team-photo.jpg 1920w,
+			/assets/media/team-photo-mobile.jpg 900w"
+     sizes="(max-width: 1080px) 900px,
+            1920px"
+			src="/assets/media/team-photo.jpg" alt="Pascal Perron et Vanessa Plamondon, fondateurs de Toitures Bellevue" width="100%">
 		</main>
 
 		<?php include 'parts/footer.php' ?>

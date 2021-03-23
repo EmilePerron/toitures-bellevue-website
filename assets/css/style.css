@@ -33,7 +33,7 @@ html, body { padding: 0; margin: 0; font-family: var(--font-body); font-size: 16
 * { font-family: inherit; font-size: inherit; box-sizing: inherit; -webkit-font-smoothing: inherit; }
 
 body { border-top: 177px solid white; background-color: var(--color-primary); }
-main { width: 100%; overflow: hidden; }
+main { display: flex; flex-direction: column; width: 100%; overflow: hidden; }
 
 h1 { font-family: var(--font-heading); }
 h2 { margin-top: 0; font-family: var(--font-heading); font-size: 2.5rem; }
@@ -273,7 +273,7 @@ select#area-unit { display: inline-block; width: 75px; vertical-align: top; }
 	form .two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 
 	#contact-cta { position: relative; }
-	#contact-cta::before { content: ' '; position: absolute;  top: 0; right: 0;  width: 45%; height: 100%; background-image: url('https://image.shutterstock.com/z/stock-photo-smiling-young-unshaven-business-man-in-light-shirt-protective-construction-helmet-isolated-on-grey-1687397161.jpg'); background-size: cover; background-position: center top; }
+	#contact-cta::before { content: ' '; position: absolute;  top: 0; right: 0;  width: 45%; height: 100%; background-image: url('/assets/media/pascal-toitures-bellevue.jpg'); background-size: cover; background-position: center top 30%; }
 	#contact-cta .container { padding-right: 45%; }
 }
 
@@ -336,7 +336,7 @@ select#area-unit { display: inline-block; width: 75px; vertical-align: top; }
 	#partenaires ul { grid-template-columns: repeat(2, 1fr); }
 
 	#contact-cta { padding-bottom: 0; }
-	#contact-cta::after { content: ' '; display: block; width: 100%; height: 0; padding-bottom: 66%; margin-top: 90px; background-image: url('https://image.shutterstock.com/z/stock-photo-smiling-young-unshaven-business-man-in-light-shirt-protective-construction-helmet-isolated-on-grey-1687397161.jpg'); background-size: cover; background-position: center top; }
+	#contact-cta::after { content: ' '; display: block; width: 100%; height: 0; padding-bottom: 120%; margin-top: 90px; background-image: url('/assets/media/pascal-toitures-bellevue.jpg'); background-size: cover; background-position: center top 50%; }
 
 	.field-swatches { grid-template-columns: repeat(2, 1fr); gap: 20px; }
 }
@@ -348,10 +348,3 @@ select#area-unit { display: inline-block; width: 75px; vertical-align: top; }
 	header nav > ul > li .dropdown-toggle { padding: 6px 15px; }
 }
 
-
-/* START - TEMPORARY HIDING STYLES WHILE WAITING FOR PICTURE */
-#contact-cta { padding-bottom: 120px !important; }
-#contact-cta::before,
-#contact-cta::after { display: none !important; background-image: none !important; }
-#contact-cta .container { padding-right: 0 !important; }
-/* END - TEMPORARY HIDING STYLES WHILE WAITING FOR PICTURE */
