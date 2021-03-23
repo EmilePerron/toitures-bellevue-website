@@ -283,6 +283,7 @@ select#area-unit { display: inline-block; width: 75px; vertical-align: top; }
 
 @media (max-width: 991px) {
 	body { border-top-width: 90px; }
+	ol li::marker { font-size: 2rem; }
 
 	#help-bar { display: none; }
 	header { position: fixed; top: 0; }
