@@ -55,6 +55,11 @@
 					<h2>Nos partenaires</h2>
 					<ul>
 						<li>
+							<a href="http://fr.gaf.ca/" target="_blank">
+								<img src="/assets/media/square-logo-gaf.png" alt="Logo de GAF">
+							</a>
+						</li>
+						<li>
 							<a href="https://www.iko.com/na/fr/" target="_blank">
 								<img src="/assets/media/square-logo-iko.png" alt="Logo d'IKO">
 							</a>
