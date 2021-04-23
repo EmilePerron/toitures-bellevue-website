@@ -131,6 +131,10 @@
 							<label for="input-name">Votre adresse courriel ou numéro de téléphone</label>
 							<input type="text" name="contact" id="input-contact" required>
 						</fieldset>
+						<fieldset class="required">
+							<label for="input-address">Adresse de votre maison ou projet</label>
+							<input type="text" name="address" id="input-address" required>
+						</fieldset>
 						<div class="button-container text-center">
 							<button type="submit">Envoyer ma demande</button>
 						</div>

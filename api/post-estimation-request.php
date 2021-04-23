@@ -6,7 +6,7 @@ require 'inc/estimate.php';
 header("Content-Type: application/json");
 
 try {
-	if (empty($_POST['name']) || empty($_POST['contact'])) {
+	if (empty($_POST['name']) || empty($_POST['contact']) || empty($_POST['address'])) {
 		throw new \Exception(); 
 	}
 

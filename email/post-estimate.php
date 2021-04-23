@@ -140,6 +140,7 @@ $accessoryNames = [
 						<h2>Informations de contact</h2>
 						<strong>Nom:</strong> <?= htmlspecialchars(strip_tags($_POST['name'] ?? '')) ?><br>
 						<strong>Courriel ou téléphone:</strong> <?= htmlspecialchars(strip_tags($_POST['contact'] ?? '')) ?><br><br>
+						<strong>Adresse:</strong> <?= htmlspecialchars(strip_tags($_POST['address'] ?? '')) ?><br><br>
 
 						<h2>Informations sur la toiture</h2>
 						<strong>Type de travaux:</strong> <?= $typeNames[$_POST['type'] ?? ''] ?? '' ?><br>
