@@ -48,7 +48,7 @@ usort($photos, function($a, $b) {
 
 		<script src="https://cdn.jsdelivr.net/gh/andreknieriem/simplelightbox@v2.7.3/dist/simple-lightbox.min.js"></script>
 		<script>
-			var lightbox = new SimpleLightbox('.photo-album img', { sourceAttr: "fullsize-url" });
+			var lightbox = new SimpleLightbox('.photo-album img', { sourceAttr: "fullsize-url", preloading: false });
 		</script>
 	</body>
 </html>
