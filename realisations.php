@@ -33,7 +33,7 @@ usort($photos, function($a, $b) {
 							<?php 
 							$filenameParts = explode("/", $photoUrl);
 							$imageFilename = array_pop($filenameParts);
-							$thumbnailUrl = "https://res.cloudinary.com/toitures-bellevue/image/upload/media/projects/" . $imageFilename;
+							$thumbnailUrl = "https://res.cloudinary.com/toitures-bellevue/image/upload/w_400/media/projects/" . $imageFilename;
 							?>
 							<img src="<?= $thumbnailUrl ?>" fullsize-url="<?= $photoUrl ?>">
 						<?php endforeach ?>
