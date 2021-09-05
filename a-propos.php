@@ -34,7 +34,7 @@
 					<ul>
 						<li>
 							<div class="type">Main d'oeuvre</div>
-							<div class="length">5 ans</div>
+							<div class="length">10 ans</div>
 						</li>
 						<li>
 							<div class="type">Matériaux</div>
