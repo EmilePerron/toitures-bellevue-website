@@ -3,13 +3,13 @@
 function estimateFromPostData()
 {
 	$accessoryPrices = [
-		'fan' => 150.00,
-		'chimney' => 150.00,
-		'plumbing_vent' => 60.00,
+		'fan' => 200.00,
+		'chimney' => 200.00,
+		'plumbing_vent' => 100.00,
 	];
 
 	$walkable = $_POST['walkable'] == 'yes';
-	$costPerSquareFeet = $walkable ? 4.00 : 5.50;
+	$costPerSquareFeet = $walkable ? 5.50 : 8.00;
 	$area = abs(floatval($_POST['area']));
 	
 	// Check to convert m2 to ft2
@@ -21,7 +21,7 @@ function estimateFromPostData()
 
 	// Apply new constructions labor discount
 	if (($_POST['type'] ?? null) == 'new') {
-		$subtotal *= 0.55;
+		$subtotal *= 0.6625;
 	}
 
 	// Calculate accessories
