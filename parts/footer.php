@@ -34,6 +34,14 @@
 			<a href="/estimateur-en-ligne" class="button">Obtenir une estimation gratuite</a>
 		</div>
 		
+		<div class="footer-certifications">
+		    <div class="title">Certifications</div>
+		    
+		    <div class="certification-list">
+		        <img src="/assets/media/gaf-certified.png" alt="Entrepreneur certifié GAF">
+		    </div>
+		</div>
+		
 		<form class="basic-contact-form">
 			<div class="title">Contactez-nous</div>
 			
