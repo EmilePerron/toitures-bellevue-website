@@ -34,8 +34,14 @@ usort($photos, function($a, $b) {
 							$filenameParts = explode("/", $photoUrl);
 							$imageFilename = array_pop($filenameParts);
 							$thumbnailUrl = "https://res.cloudinary.com/toitures-bellevue/image/upload/w_400/media/projects/" . $imageFilename;
+							$imageSize = getimagesize($photoUrl);
+							
 							?>
-							<img src="<?= $thumbnailUrl ?>" fullsize-url="<?= $photoUrl ?>">
+							<img src="<?= $thumbnailUrl ?>" fullsize-url="<?= $photoUrl ?>" 
+							    <?= $imageSize !== false ? (
+							        'width="' . $imageSize[0] . '" height="' . $imageSize[1] . '"'
+							    ) : "" ?>
+						    >
 						<?php endforeach ?>
 					</div>
 				</div>
