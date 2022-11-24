@@ -152,6 +152,7 @@ footer .contact .links { margin-top: 20px; }
 footer .contact .links > * { margin-top: 5px; }
 footer .contact .links i { margin-right: 5px; }
 footer .contact .license { margin-top: 20px; font-size: .9rem; }
+footer .contact .license a { text-decoration: none; }
 footer .footer-certifications .title { padding-bottom: 10px; margin-top: -5px; margin-bottom: 10px; font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; border-bottom: 2px solid #232729; }
 footer .footer-certifications .certification-list { display: grid; width: 300px; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px; }
 footer .footer-certifications .certification-list img { width: 100%; }

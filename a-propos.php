@@ -91,6 +91,7 @@
 						<li>Sainte-Anne-de-Beaupré</li>
 						<li>Sainte-Foy</li>
 						<li>Stoneham</li>
+						<li>Val-Bélair</li>
 					</ul>
 				</div>
 			</section>

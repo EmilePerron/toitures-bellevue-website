@@ -28,7 +28,7 @@
 			</div>
 
 			<div class="license">
-				Licence RBQ: 5791-2487-01
+				<a href="https://www.rbq.gouv.qc.ca/" target="_blank">Licence RBQ: 5791-2487-01</a>
 			</div>
 
 			<a href="/estimateur-en-ligne" class="button">Obtenir une estimation gratuite</a>
@@ -38,7 +38,9 @@
 		    <div class="title">Certifications</div>
 		    
 		    <div class="certification-list">
-		        <img src="/assets/media/gaf-certified.png" alt="Entrepreneur certifié GAF">
+		        <a href="https://www.gaf.ca/roofing-contractors/residential/toitures-bellevue-inc-1137087" target="_blank">
+		            <img src="/assets/media/gaf-certified.png" alt="Entrepreneur certifié GAF">
+		        </a>
 		    </div>
 		</div>
 		
