@@ -51,9 +51,6 @@ $currentRoute = str_replace('.php', '', ltrim($_SERVER['PHP_SELF'] ?? '', '/'));
 				<li itemprop="name">
 					<a href="/realisations" itemprop="url" class="<?= $currentRoute == 'realisations' ? 'current' : '' ?>">Réalisations</a>
 				</li>
-				<!--li itemprop="name">
-					<a href="/blogue" itemprop="url" class="<?= strpos($currentRoute, 'blogue') !== false ? 'current' : '' ?>">Blogue</a>
-				</li-->
 				<li itemprop="name">
 					<a href="/carriere" itemprop="url" class="<?= $currentRoute == 'carriere' ? 'current' : '' ?>">Carrière</a>
 				</li>

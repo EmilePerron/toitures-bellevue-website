@@ -10,25 +10,39 @@
 			
 			<div class="links">
 				<div>
-					<i class="fab fa-facebook"></i>
-					<a href="https://www.facebook.com/Toitures-Bellevue-104746334930300/" target="_blank">Retrouvez-nous sur Facebook</a>
-				</div>
-				<div>
 					<i class="fas fa-envelope"></i>
 					<a href="mailto:info@toituresbellevue.com">info@toituresbellevue.com</a>
 				</div>
 				<div>
 					<i class="fas fa-phone-alt"></i>
-					<a href="tel:15819096111">1 581 909-6111</a>
+					Administration: 
+					<a href="tel:15819096111">581 909-6111</a>
 				</div>
 				<div>
-					<strong>Urgence:</strong>
-					<a href="tel:15819096111">1 581 909-6111</a>
+					<i class="fas fa-phone-alt"></i>
+					Administration: 
+					<a href="tel:14183766111">418 376-6111</a>
+				</div>
+				<div>
+					<i class="fas fa-phone-alt"></i>
+					Urgence: 
+					<a href="tel:15819096111">581 909-6111</a>
 				</div>
 			</div>
 
 			<div class="license">
 				<a href="https://www.rbq.gouv.qc.ca/" target="_blank">Licence RBQ: 5791-2487-01</a>
+			</div>
+			
+			<div class="socials">
+				<a href="https://www.facebook.com/Toitures-Bellevue-104746334930300/" target="_blank">
+					<i class="fab fa-facebook"></i>
+					<span class="sr-only">Toitures Bellevue sur Facebook</span>
+				</a>
+				<a href="https://www.instagram.com/toitures_bellevue_inc/" target="_blank">
+					<i class="fab fa-instagram"></i>
+					<span class="sr-only">Toitures Bellevue sur Instagram</span>
+				</a>
 			</div>
 
 			<a href="/estimateur-en-ligne" class="button">Obtenir une estimation gratuite</a>
@@ -72,7 +86,15 @@
 			</div>
 		</form>
 	</div>
+
+	<div class="container legal">
+		<div>
+			© 2020-<?= date('Y') ?>  Tous droits réservés | Toitures Bellevue inc.
+		</div>
+		<div>
+			<a href="/confidentialite">Politique de confidentialité</a>
+		</div>
+	</div>
 </footer>
 
 <script src="/assets/js/main.js?v=0.2.0"></script>
-<script src="https://cdn.eckinox.net/EmilePerron/deprecated-browser-notice/notify-ie11.js"></script>

@@ -70,7 +70,7 @@
 							</a>
 						</li>
 					</ul>
-					<p class="text-center">Numéro de licence RBQ: 5791-2487-01</p>
+					<p>Numéro de licence RBQ: 5791-2487-01</p>
 				</div>
 			</section>
 

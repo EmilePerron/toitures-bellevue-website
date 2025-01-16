@@ -51,12 +51,14 @@ section.hidden { display: none; }
 
 .container { width: 1140px; max-width: 90%; margin: auto; }
 .container.small { width: 768px; }
+.sr-only { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
 
 .text-left { text-align: left; }
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 .text-small { font-size: .85rem; }
 
+p { width: 100%; max-width: 80ch; }
 p:first-child { margin-top: 0; }
 p a { text-decoration: none; color: var(--button-background-color); transition: all .15s ease; }
 p a:hover { color: var(--color-primary-black); }
@@ -144,13 +146,15 @@ body.stick-nav header { position: fixed; top: 0; box-shadow: 0 3px 15px rgba(0, 
 body.stick-nav header .container { height: 90px; transition: height .35s ease-in-out; }
 body.stick-nav header .branding img { width: 65%; transition: all .35s ease-in-out; }
 
-footer { max-width: 100%; min-height: 250px; padding: 90px 0; color: var(--color-white); background-color: var(--color-black); overflow: hidden; }
+footer { max-width: 100%; min-height: 250px; padding-top: 90px; color: var(--color-white); background-color: var(--color-black); overflow: hidden; }
 footer .container { display: flex; justify-content: space-between; }
 footer a:not(.button) { color: var(--color-white); transition: color .15s ease; }
 footer a:not(.button):hover { color: var(--color-primary-light); }
 footer .contact .links { margin-top: 20px; }
 footer .contact .links > * { margin-top: 5px; }
 footer .contact .links i { margin-right: 5px; }
+footer .contact .socials { margin-top: 20px; }
+footer .contact .socials a { margin-right: 5px; font-size: 1.5rem; line-height: 1; text-decoration: none; }
 footer .contact .license { margin-top: 20px; font-size: .9rem; }
 footer .contact .license a { text-decoration: none; }
 footer .footer-certifications .title { padding-bottom: 10px; margin-top: -5px; margin-bottom: 10px; font-family: var(--font-heading); font-size: 1.25rem; font-weight: 600; border-bottom: 2px solid #232729; }
@@ -161,16 +165,10 @@ footer form .title { padding-bottom: 10px; margin-bottom: 10px; font-family: var
 footer form input, 
 footer form select, 
 footer form textarea { font-size: .9rem; color: white; background-color: #232729; border-color: #44494c; }
-
-/* >>> BLOG >>> */
-.article-listing { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
-.article-listing a { display: block; padding: 30px; text-decoration: none; color: var(--color-black); background-color: white; border-radius: 1px; }
-.article-listing a .title { display: block; font-size: 1.2rem; font-weight: 600; }
-.article-listing a .preview { margin-top: 10px; font-size: .9em; color: var(--color-tertiary-darker); }
-/* <<< BLOG <<< */
+footer .legal { margin-bottom: 15px; margin-top: 60px; font-size: .8rem; }
 
 /* >>> HOMEPAGE >>> */
-#hero { display: flex; min-height: max(75vh, 500px); background-image: url('../media/heading-background-blurred.jpg'); background-size: cover; background-position: center top; background-repeat: no-repeat; background-color: var(--color-primary); background-blend-mode: soft-light; }
+#hero { display: flex; min-height: max(70vh, 500px); background-image: url('../media/heading-background-blurred.jpg'); background-size: cover; background-position: center top; background-repeat: no-repeat; background-color: var(--color-primary); background-blend-mode: soft-light; }
 #hero h1 { width: 600px; max-width: 100%; font-size: 2.65rem; color: white; }
 #hero .cta { display: inline-flex; padding: 18px 26px; font-size: 1.1rem; font-weight: 600; text-decoration: none; color: var(--color-tertiary-darker); background-color: var(--color-tertiary); border-bottom-left-radius: 20px; transition: background-color .25s ease; }
 #hero .cta i { margin-left: 15px; font-size: 1.35rem; line-height: 1.2; position: relative; top: 2px; left: -1px; transition: left .25s ease-in-out; }
@@ -268,6 +266,11 @@ select#area-unit { display: inline-block; width: 75px; vertical-align: top; }
 #cta-form-success { display: none; margin-top: 60px; font-weight: 600; }
 #cta-form-success i { font-size: 5rem; }
 /* <<< ESTIMATOR <<< */
+
+
+/* >>> LEGAL PAGES >>> */
+body.legal-page section + section { padding-top: 0; }
+/* <<< LEGAL PAGES <<< */
 
 
 @media (min-width: 1280px) {

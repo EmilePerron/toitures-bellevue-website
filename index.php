@@ -93,24 +93,6 @@
 					</ul>
 				</div>
 			</section>
-
-			<!--section class="tertiary diagonal-top">
-				<div class="container">
-					<h2>Nos plus récents articles</h2>
-					<div class="article-listing button-tertiary">
-						<a href="afasdf">
-							<div class="title">Rajeunir sa maison avec sa toiture</div>
-							<div class="preview">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus rerum totam cum magnam quia.</div>
-							<span class="button">Lire l'article</span>
-						</a>
-						<a href="afasdf">
-							<div class="title">Pourquoi faire affaire avec une entreprise spécialisée en toiture résidentielle</div>
-							<div class="preview">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus rerum totam cum magnam quia.</div>
-							<span class="button">Lire l'article</span>
-						</a>
-					</div>
-				</div>
-			</section-->
 		</main>
 
 		<?php include 'parts/footer.php' ?>
