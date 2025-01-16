@@ -70,6 +70,18 @@
 					</ul>
 				</div>
 			</section>
+
+			<section class="tertiary">
+				<div class="container">
+					<h2>Responsable de la protection des renseignements personnels</h2>
+					<p>
+						<strong>Pascal Perron</strong><br>
+						Directeur Général et Président<br>
+						<a href="tel:15819096111">581 909-6111</a><br>
+						<a href="mailto:info@toituresbellevue.com">info@toituresbellevue.com</a><br>
+					</p>
+				</div>
+			</section>
 		</main>
 
 		<?php include 'parts/footer.php' ?>

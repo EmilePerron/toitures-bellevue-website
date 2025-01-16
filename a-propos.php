@@ -79,19 +79,45 @@
 					<h2>Secteurs désservis</h2>
 					<p>Toiture Bellevue est le spécialiste en toiture résidentielle dans les secteurs suivants:</p>
 					<ul>
-						<li>Beauport</li>
-						<li>Boischatel</li>
-						<li>Charlesbourg</li>
-						<li>Château-Richer</li>
-						<li>L'Ancienne-Lorette</li>
-						<li>Lac-Beauport</li>
-						<li>Lévis</li>
-						<li>Loretteville</li>
-						<li>Québec</li>
-						<li>Sainte-Anne-de-Beaupré</li>
-						<li>Sainte-Foy</li>
-						<li>Stoneham</li>
-						<li>Val-Bélair</li>
+						<li>
+							<a href="/couvreur-beauport" class="text-link">Beauport
+						</li>
+						<li>
+							<a href="/couvreur-boischatel" class="text-link">Boischatel
+						</li>
+						<li>
+							<a href="/couvreur-charlesbourg" class="text-link">Charlesbourg
+						</li>
+						<li>
+							<a href="/couvreur-chateau-richer" class="text-link">Château-Richer
+						</li>
+						<li>
+							<a href="/couvreur-ancienne-lorette" class="text-link">L'Ancienne-Lorette
+						</li>
+						<li>
+							<a href="/couvreur-lac-beauport" class="text-link">Lac-Beauport
+						</li>
+						<li>
+							<a href="/couvreur-levis" class="text-link">Lévis
+						</li>
+						<li>
+							<a href="/couvreur-loretteville" class="text-link">Loretteville
+						</li>
+						<li>
+							<a href="/couvreur-quebec" class="text-link">Québec
+						</li>
+						<li>
+							<a href="/couvreur-sainte-anne-de-beaupre" class="text-link">Sainte-Anne-de-Beaupré
+						</li>
+						<li>
+							<a href="/couvreur-sainte-foy" class="text-link">Sainte-Foy
+						</li>
+						<li>
+							<a href="/couvreur-stoneham" class="text-link">Stoneham
+						</li>
+						<li>
+							<a href="/couvreur-val-belair" class="text-link">Val-Bélair
+						</li>
 					</ul>
 				</div>
 			</section>

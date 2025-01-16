@@ -14,6 +14,12 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php
 
+# Allow extension-less page URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^reparation-de-toiture-(.*)$ location-targeted/reparation.php?location=$1 [L]
+RewriteRule ^couvreur-(.*)$ location-targeted/couvreur.php?location=$1 [L]
+
 # Prevent access to sensitive directories
 RedirectMatch 404 /\.git
 RedirectMatch 404 /_forms
