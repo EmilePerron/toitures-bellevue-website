@@ -16,11 +16,24 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php
 
-# Allow extension-less page URLs
-RewriteCond %{REQUEST_FILENAME} !-d
+# Redirect rule for location targeted pages
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^reparation-de-toiture-(.*)$ location-targeted/reparation.php?location=$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^couvreur-(.*)$ location-targeted/couvreur.php?location=$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^isolation-entretoit-(.*)$ location-targeted/isolation.php?location=$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^installation-toiture-(.*)$ location-targeted/installation.php?location=$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^entrepreneur-en-toiture-(.*)$ location-targeted/entrepreneur.php?location=$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^renovation-toiture-(.*)$ location-targeted/renovation.php?location=$1 [L]
+
+# Redirect rule for sitemap.xml
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^sitemap.xml$ sitemap.php [L]
 
 # Prevent access to sensitive directories
 RedirectMatch 404 /\.git

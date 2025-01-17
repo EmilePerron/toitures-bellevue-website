@@ -1,27 +1,6 @@
 <?php
-$mapping = [
-	"beauport" => "à Beauport",
-	"boischatel" => "à Boischatel",
-	"charlesbourg" => "à Charlesbourg",
-	"chateau-richer" => "à Château-Richer",
-	"ancienne-lorette" => "à L'Ancienne-Lorette",
-	"lac-beauport" => "au Lac-Beauport",
-	"levis" => "à Lévis",
-	"loretteville" => "à Loretteville",
-	"quebec" => "à Québec",
-	"sainte-anne-de-beaupre" => "à Sainte-Anne-de-Beaupré",
-	"sainte-foy" => "à Sainte-Foy",
-	"stoneham" => "à Stoneham",
-	"val-belair" => "à Val-Bélair",
-];
-$locationSlug = $_GET['location'] ?? null;
-
-if (!$locationSlug || !isset($mapping[$locationSlug])) {
-	header('Location:https://www.toituresbellevue.com/services/reparation-de-toiture');
-	die();
-}
-
-$atLocation = $mapping[$locationSlug];
+require './_mapping.php';
+list($locationSlug, $atLocation) = getUrlLocation(fallbackUri: "/services/reparation-de-toiture");
 ?>
 <!DOCTYPE html>
 <html lang="fr-CA">

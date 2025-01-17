@@ -70,6 +70,7 @@ section .container > img { float: right; width: 400px; margin-left: 60px; }
 section .container > img.left { float: left; margin-left: 0; margin-right: 60px; }
 section .container:has( > img)::after { content: ' '; display: block; clear: both; }
 
+ul { width: 100%; max-width: 80ch; }
 ol li { margin-bottom: 20px; font-size: 1.25rem; font-weight: 500; color: var(--color-primary-light); width: 600px; max-width: 100%; }
 ol li::marker { font-family: var(--font-heading); font-size: 3rem; line-height: 1; color: var(--color-primary-light); }
 

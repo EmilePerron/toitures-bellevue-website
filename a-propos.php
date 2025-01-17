@@ -92,7 +92,7 @@
 							<a href="/couvreur-chateau-richer" class="text-link">Château-Richer
 						</li>
 						<li>
-							<a href="/couvreur-ancienne-lorette" class="text-link">L'Ancienne-Lorette
+							<a href="/couvreur-lancienne-lorette" class="text-link">L'Ancienne-Lorette
 						</li>
 						<li>
 							<a href="/couvreur-lac-beauport" class="text-link">Lac-Beauport

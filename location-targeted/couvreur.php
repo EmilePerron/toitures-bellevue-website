@@ -1,34 +1,13 @@
 <?php
-$mapping = [
-	"beauport" => "à Beauport",
-	"boischatel" => "à Boischatel",
-	"charlesbourg" => "à Charlesbourg",
-	"chateau-richer" => "à Château-Richer",
-	"ancienne-lorette" => "à L'Ancienne-Lorette",
-	"lac-beauport" => "au Lac-Beauport",
-	"levis" => "à Lévis",
-	"loretteville" => "à Loretteville",
-	"quebec" => "à Québec",
-	"sainte-anne-de-beaupre" => "à Sainte-Anne-de-Beaupré",
-	"sainte-foy" => "à Sainte-Foy",
-	"stoneham" => "à Stoneham",
-	"val-belair" => "à Val-Bélair",
-];
-$locationSlug = $_GET['location'] ?? null;
-
-if (!$locationSlug || !isset($mapping[$locationSlug])) {
-	header('Location:https://www.toituresbellevue.com/services/reparation-de-toiture');
-	die();
-}
-
-$atLocation = $mapping[$locationSlug];
+require './_mapping.php';
+list($locationSlug, $atLocation) = getUrlLocation(fallbackUri: "/services/refection-de-toiture");
 ?>
 <!DOCTYPE html>
 <html lang="fr-CA">
 	<head>
 		<title>Couvreur <?= $atLocation ?> — Toitures Bellevue</title>
 		<?php include '../parts/head.php' ?>
-		<meta name="description" content="Expert en réparation de toiture <?= $atLocation ?>, Toitures Bellevue vous offre des solutions durables. Contactez-nous dès maintenant pour une estimation!">
+		<meta name="description" content="Pour des services de toiture inégalés dans la région de Québec, faites appel à Toitures Bellevue. Nous sommes votre couvreur de choix <?= $atLocation ?>,!">
 	</head>
 	<body>
 		<?php include '../parts/header.php' ?>
