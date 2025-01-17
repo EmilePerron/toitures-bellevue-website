@@ -25,6 +25,8 @@ date_default_timezone_set('America/Toronto');
 <link rel="preload" as="image" href="/assets/media/heading-background-blurred.jpg" />
 
 <?php if (strpos($_SERVER['SERVER_NAME'] ?? '', 'dev.toituresbellevue.com') === false && strpos($_SERVER['SERVER_NAME'] ?? '', 'localhost') === false) : ?>
+	<?php
+	/*
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FRSJ5Z332"></script>
 	<script>
@@ -33,6 +35,13 @@ date_default_timezone_set('America/Toronto');
 	gtag('js', new Date());
 
 	gtag('config', 'G-3FRSJ5Z332');
+	</script>
+	*/
+	?>
+	<script>
+		function gtag() {
+			console.log('Tracking disabled. gtag() function called with following arguments:', {...arguments});
+		 }
 	</script>
 <?php else : ?>
 	<script>
