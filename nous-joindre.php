@@ -27,18 +27,34 @@
 								</div>
 							</div>
 							<div>
+								<i class="fas fa-clock"></i>
+								Lun-Ven: 7h-18h<br>
+								Samedi: 7h-16h<br>
+								Dimanche: 8h-16h
+							</div>
+							<div>
 								<i class="fas fa-envelope"></i>
 								<a href="mailto:info@toituresbellevue.com">info@toituresbellevue.com</a>
 							</div>
 							<div>
 								<i class="fas fa-phone-alt"></i>
-								<a href="tel:15819096111">1 581 909-6111</a>
+								<div>
+									Administration: 
+									<a href="tel:15819096111">581 909-6111</a>
+								</div>
 							</div>
 							<div>
 								<i class="fas fa-phone-alt"></i>
 								<div>
-									<a href="tel:15819096111">1 581 909-6111</a>
-									<div class="text-small">(pour urgences)</div>
+									Soumission: 
+									<a href="tel:14183766111">418 376-6111</a>
+								</div>
+							</div>
+							<div>
+								<i class="fas fa-phone-alt"></i>
+								<div>
+									Urgence: 
+									<a href="tel:15819096111">581 909-6111</a>
 								</div>
 							</div>
 						</div>

@@ -20,7 +20,7 @@
 				</div>
 				<div>
 					<i class="fas fa-phone-alt"></i>
-					Administration: 
+					Soumission: 
 					<a href="tel:14183766111">418 376-6111</a>
 				</div>
 				<div>
