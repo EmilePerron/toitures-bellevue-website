@@ -17,18 +17,18 @@ RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php
 
 # Redirect rule for location targeted pages
-RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^reparation-de-toiture-(.*)$ location-targeted/reparation.php?location=$1 [L]
-RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^couvreur-(.*)$ location-targeted/couvreur.php?location=$1 [L]
-RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^isolation-entretoit-(.*)$ location-targeted/isolation.php?location=$1 [L]
-RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^installation-toiture-(.*)$ location-targeted/installation.php?location=$1 [L]
-RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^entrepreneur-en-toiture-(.*)$ location-targeted/entrepreneur.php?location=$1 [L]
-RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^renovation-toiture-(.*)$ location-targeted/renovation.php?location=$1 [L]
+
+# 301 redirects from old pages
+RewriteRule ^contact$ /nous-joindre [R=301,L]
+RewriteRule ^services/inspection-de-toitures /services/inspection-de-toiture [R=301,L]
+RewriteRule ^reparation-toiture-(.*)$ /reparation-de-toiture-$1 [R=301,L]
+RewriteRule ^isolation-de-toiture-(.*)$ /isolation-entretoit-$1 [R=301,L]
 
 # Redirect rule for sitemap.xml
 RewriteCond %{REQUEST_FILENAME} !-d

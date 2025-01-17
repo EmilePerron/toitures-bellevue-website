@@ -15,11 +15,13 @@ function getLocationMappings(): array
 		"chateau-richer" => "à Château-Richer",
 		"lancienne-lorette" => "à L'Ancienne-Lorette",
 		"lac-beauport" => "au Lac-Beauport",
+		"lac-saint-charles" => "au Lac-Saint-Charles",
 		"levis" => "à Lévis",
 		"loretteville" => "à Loretteville",
 		"quebec" => "à Québec",
 		"saint-emile" => "à Saint-Émile",
 		"sainte-anne-de-beaupre" => "à Sainte-Anne-de-Beaupré",
+		"saint-augustin-desmaures" => "à Saint-Augustin-de-Desmaures",
 		"sainte-foy" => "à Sainte-Foy",
 		"stoneham" => "à Stoneham",
 		"val-belair" => "à Val-Bélair",
@@ -51,6 +53,7 @@ function getUrlLocation(string $fallbackUri): array
 	$locationSlug = $_GET['location'] ?? null;
 	
 	if (!$locationSlug || !isset($mapping[$locationSlug])) {
+		header("HTTP/1.1 301 Moved Permanently");
 		header("Location:https://www.toituresbellevue.com{$fallbackUri}");
 		die();
 	}
