@@ -19,7 +19,7 @@ try {
 
 	$headers = "MIME-Version: 1.0\r\n";
 	$headers .= "From: ToituresBellevue.com <nepasrepondre@toituresbellevue.com>\r\n";
-	$headers .= "Content-Type: multipart/mixed; boundary = $boundary\r\n\r\n";
+	$headers .= "Content-Type: multipart/mixed; charset=UTF-8; boundary = $boundary\r\n\r\n";
 
 	$body = "--$boundary\r\n";
 	$body .= "Content-Type: text/html; charset=UTF-8\r\n";
